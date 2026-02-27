@@ -1,19 +1,15 @@
 # 核心主题配置：启用 Just the Docs（支持左侧侧边栏）
 remote_theme: just-the-docs/just-the-docs
 
-# 站点基础信息（修改此处！）
-# 1. url：替换为你的 GitHub Pages 域名（截图中是 myx1359.github.io）
+# 站点基础信息（已按你的配置填充）
 url: "https://myx1359.github.io"
-# 2. baseurl：替换为你的仓库名（截图中仓库是 AI，因此填 /AI；若仓库是用户名.github.io则留空）
 baseurl: "/DJ_AI"
 
 # 文档标题（侧边栏顶部显示）
 title: 中山大学计算机学院党建AI管理系统操作手册
 
 # 关键：开启左侧侧边栏 + 关闭右侧目录
-# 侧边栏位置：左侧
 sidebar: left
-# 关闭右侧自动生成的目录（仅显示正文）
 toc:
   enabled: false
 
@@ -26,8 +22,14 @@ kramdown:
     block:
       line_numbers: false
 
-# 侧边栏自动抓取 README.md 的标题（无需手动写目录）
+# 侧边栏自动抓取 README.md 的标题生成导航（无需手动写navigation）
+# 若需多文件/自定义导航，可按格式扩展pages列表
 nav:
   - title: 操作手册
     pages:
       - README.md
+
+# 额外优化：Just the Docs 中文侧边栏样式适配（可选，解决文字截断/间距问题）
+# 如需自定义侧边栏样式，可添加以下配置
+# custom_css: 
+#   - assets/css/custom-sidebar.css
