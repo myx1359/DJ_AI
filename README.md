@@ -75,7 +75,7 @@ h3::before {
 
 - 访问方式
 
-使用浏览器，输入网址（http://party-eval-ai.ismartcube.cn/#/login）进入中大AI党建评估系统登录页，建议谷歌浏览器。
+使用浏览器，输入网址（http://party-eval-ai.ismartcube.cn/#/login） 进入中大AI党建评估系统登录页，建议谷歌浏览器。
 
 - 登录流程
 
@@ -2363,4 +2363,5 @@ h3::before {
 小程序接收到的消息，归入消息列表，点击即可查看。
 
 ![dc28d466fa2f93c4bd4cba9f5999e9a2](./images/media/image217.jpeg)
+
 
