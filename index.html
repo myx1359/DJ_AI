@@ -2,51 +2,85 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>党建AI操作手册</title>
+  <title>DJ_AI操作手册</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* 侧边栏整体样式 */
+    /* ========== 核心：给侧边栏目录加层级序号 ========== */
+    /* 一级目录（h1）序号 */
+    .sidebar-nav > li::before {
+      content: counter(level1) " ";
+      counter-increment: level1;
+      font-weight: bold;
+    }
+    /* 重置二级目录序号 */
+    .sidebar-nav > li {
+      counter-reset: level2;
+      position: relative;
+      padding-left: 20px; /* 给序号留空间 */
+    }
+    /* 二级目录（h2）序号 */
+    .sidebar-nav > li > ul > li::before {
+      content: counter(level1) "." counter(level2) " ";
+      counter-increment: level2;
+      font-weight: normal;
+    }
+    /* 重置三级目录序号 */
+    .sidebar-nav > li > ul > li {
+      counter-reset: level3;
+      padding-left: 30px;
+    }
+    /* 三级目录（h3）序号 */
+    .sidebar-nav > li > ul > li > ul > li::before {
+      content: counter(level1) "." counter(level2) "." counter(level3) " ";
+      counter-increment: level3;
+      font-size: 0.9em;
+    }
+    /* 初始化一级序号计数器 */
+    .sidebar-nav {
+      counter-reset: level1;
+      list-style: none !important; /* 隐藏默认圆点 */
+      padding-left: 10px !important;
+    }
+    /* 隐藏默认的目录圆点 */
+    .sidebar-nav li {
+      list-style: none !important;
+      margin: 4px 0;
+    }
+    /* ========== 侧边栏基础样式 ========== */
     .app-nav { display: none !important; }
     .sidebar {
       display: block !important;
-      width: 260px !important;
+      width: 280px !important; /* 加宽适配序号 */
       left: 0 !important;
       top: 0 !important;
       background: #f5f5f5;
       border-right: 1px solid #eee;
       height: 100vh !important;
       overflow-y: auto;
+      padding-top: 10px !important;
     }
-    /* 强制在侧边栏最顶部插入标题 */
+    /* 侧边栏顶部标题（可选，如需显示则保留） */
     .sidebar::before {
-      content: "中山大学计算机学院党建AI管理系统操作手册";
+      content: "DJ_AI操作手册";
       display: block;
       padding: 15px;
       font-size: 16px;
       font-weight: bold;
       text-align: center;
-      background-color: #42b983;
+      background: #42b983;
       color: white;
       border-bottom: 1px solid #eee;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    /* 调整目录列表，让它从标题下方开始 */
-    .sidebar-nav {
-      margin-top: 0 !important;
-      padding-top: 0 !important;
+      margin: -10px -10px 10px -10px; /* 适配内边距 */
     }
     /* 正文区偏移 */
     .content {
-      margin-left: 260px !important;
+      margin-left: 280px !important;
       padding: 20px;
     }
-    /* 隐藏右侧目录 */
     .toc-nav { display: none !important; }
 
-    /* 保留你原有的标题序号样式 */
+    /* 正文序号样式（保留原有） */
     body {counter-reset: chapter 0 section 0;}
     h1 {counter-reset: section 0;counter-increment: chapter;}
     h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}
@@ -59,12 +93,13 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '', // 清空name，避免干扰
+      name: '', // 清空避免干扰
       repo: 'https://github.com/myx1359/DJ_AI',
-      autoHeader: false,
-      subMaxLevel: 3,
+      autoHeader: false, // 关闭自动标题
+      subMaxLevel: 3, // 抓取1-3级标题
       auto2top: true,
-      loadSidebar: false,
+      loadSidebar: false, // 自动抓取README标题
+      // 关键：确保锚点和目录匹配
       markdown: {
         anchor: {
           level: [1,2,3],
