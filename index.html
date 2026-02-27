@@ -4,46 +4,60 @@
   <meta charset="UTF-8">
   <title>DJ_AI操作手册</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Docsify 核心样式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* 强制显示侧边栏 + 固定宽度 */
-    .app-nav { display: none !important; } /* 隐藏顶部导航 */
+    /* 侧边栏样式 */
+    .app-nav { display: none !important; }
     .sidebar { 
-      display: block !important; /* 强制显示侧边栏 */
+      display: block !important; 
       width: 260px !important; 
       left: 0 !important;
       background: #f5f5f5;
       border-right: 1px solid #eee;
     }
     .content { margin-left: 260px !important; padding: 20px; }
-    .toc-nav { display: none !important; } /* 隐藏右侧目录 */
+    .toc-nav { display: none !important; }
+
+    /* 保留你原有标题序号样式（关键：用这个替代Docsify自动序号） */
+    body {counter-reset: chapter 0 section 0;}
+    h1 {counter-reset: section 0;counter-increment: chapter;}
+    h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}
+    h2 {counter-reset: sub-section 0;counter-increment: section;}
+    h2::before {content: counter(chapter) "." counter(section) " ";font-weight: bold;margin-right: 0.2em;}
+    h3::before {content: counter(chapter) "." counter(section) "." counter(sub-section) " ";font-weight: bold;margin-right: 0.2em;}
+
+    /* 侧边栏顶部标题样式（问题2用） */
+    .sidebar-name {
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      background: #42b983;
+      color: white;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+    }
   </style>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'DJ_AI操作手册',
+      name: 'DJ_AI操作手册', // 侧边栏顶部标题（仅显示，不计入目录序号）
       repo: 'https://github.com/myx1359/DJ_AI',
-      // 关键1：自动抓取 README.md 的所有 Markdown 标题生成侧边栏
-      autoHeader: true,
-      // 关键2：显示1-3级标题（#/##/###）
-      subMaxLevel: 3,
-      // 关键3：滚动时高亮当前目录
+      autoHeader: false, // 关闭Docsify自动序号（用你原有style的计数器）
+      subMaxLevel: 3, // 侧边栏显示1-3级标题
       auto2top: true,
-      // 关键4：强制加载侧边栏
-      loadSidebar: false, // 先关闭手动侧边栏，优先自动抓取
-      // 中文锚点兼容
+      loadSidebar: false,
+      // 关键：让Docsify只抓取h1/h2/h3作为目录，且不计入name的序号
       markdown: {
         anchor: {
           level: [1,2,3],
-          permalink: true
+          permalink: false // 关闭锚点自动序号
         }
       }
     }
   </script>
-  <!-- Docsify 核心脚本（必须加载） -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 </body>
 </html>
