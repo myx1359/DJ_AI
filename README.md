@@ -1,39 +1,5 @@
----
-layout: single
-sidebar: true
-toc: true
----
-<style>
-body {
-    counter-reset: chapter 0 section 0;
-}
-h1 {
-    counter-reset: section 0;
-    counter-increment: chapter;
-}
-h1::before {
-    content: counter(chapter) ". ";
-    font-weight: bold;
-    margin-right: 0.2em;
-}
-h2 {
-    counter-reset: sub-section 0;
-    counter-increment: section;
-}
-h2::before {
-    content: counter(chapter) "." counter(section) " ";
-    font-weight: bold;
-    margin-right: 0.2em;
-}
-h3 {
-    counter-increment: sub-section;
-}
-h3::before {
-    content: counter(chapter) "." counter(section) "." counter(sub-section) " ";
-    font-weight: bold;
-    margin-right: 0.2em;
-}
-</style>
+<style>body {counter-reset: chapter 0 section 0;}h1 {counter-reset: section 0;counter-increment: chapter;}h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}h2 {counter-reset: sub-section 0;counter-increment: section;}h2::before {content: counter(chapter) "." counter(section) " ";font-weight: bold;margin-right: 0.2em;}h3::before {content: counter(chapter) "." counter(section) "." counter(sub-section) " ";font-weight: bold;margin-right: 0.2em;}</style>
+
 
 # 系统概述
 
@@ -2368,6 +2334,7 @@ h3::before {
 小程序接收到的消息，归入消息列表，点击即可查看。
 
 ![dc28d466fa2f93c4bd4cba9f5999e9a2](./images/media/image217.jpeg)
+
 
 
 
