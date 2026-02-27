@@ -2,58 +2,74 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>DJ_AI操作手册1</title>
+  <title>党建AI操作手册</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* 侧边栏样式 */
-    .app-nav { display: none !important; }
-    .sidebar { 
-      display: block !important; 
-      width: 260px !important; 
+    /* ========== 核心修复：解决问题1 + 问题2 ========== */
+    /* 1. 彻底隐藏 Docsify 自动生成的 name 标题（不再显示DJ_AI操作手册为目录项） */
+    .sidebar > h1 {
+      display: none !important; /* 关键：屏蔽name对应的标题 */
+    }
+    /* 2. 手动添加侧边栏顶部标题（解决目录栏无标题） */
+    .custom-sidebar-title {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 260px;
+      padding: 15px 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      background: #42b983;
+      color: white;
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+    /* 3. 调整侧边栏位置，避开手动标题 */
+    .sidebar {
+      display: block !important;
+      width: 260px !important;
       left: 0 !important;
+      top: 52px !important; /* 匹配手动标题高度 */
+      height: calc(100vh - 52px) !important;
       background: #f5f5f5;
       border-right: 1px solid #eee;
+      overflow-y: auto;
     }
-    .content { margin-left: 260px !important; padding: 20px; }
+    /* 4. 调整正文区位置 */
+    .content {
+      margin-left: 260px !important;
+      padding: 20px;
+    }
+    /* 5. 隐藏右侧目录，保留原有序号样式 */
     .toc-nav { display: none !important; }
-
-    /* 保留你原有标题序号样式（关键：用这个替代Docsify自动序号） */
     body {counter-reset: chapter 0 section 0;}
     h1 {counter-reset: section 0;counter-increment: chapter;}
     h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}
     h2 {counter-reset: sub-section 0;counter-increment: section;}
     h2::before {content: counter(chapter) "." counter(section) " ";font-weight: bold;margin-right: 0.2em;}
     h3::before {content: counter(chapter) "." counter(section) "." counter(sub-section) " ";font-weight: bold;margin-right: 0.2em;}
-
-    /* 侧边栏顶部标题样式（问题2用） */
-    .sidebar-name {
-      padding: 15px;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      background: #42b983;
-      color: white;
-      margin: 0;
-      border-bottom: 1px solid #eee;
-    }
   </style>
 </head>
 <body>
+  <!-- 手动添加侧边栏顶部标题（问题2解决） -->
+  <div class="custom-sidebar-title">DJ_AI操作手册</div>
+  
   <div id="app"></div>
+
   <script>
     window.$docsify = {
-      name: 'DJ_AI操作手册2', // 侧边栏顶部标题（仅显示，不计入目录序号）
+      name: '', // 清空name，彻底避免被识别为目录项（核心解决问题1）
       repo: 'https://github.com/myx1359/DJ_AI',
-      autoHeader: false, // 关闭Docsify自动序号（用你原有style的计数器）
-      subMaxLevel: 3, // 侧边栏显示1-3级标题
+      autoHeader: false, // 关闭自动序号，用你原有样式
+      subMaxLevel: 3, // 自动抓取1-3级标题（无需手动写目录）
       auto2top: true,
-      loadSidebar: false,
-      // 关键：让Docsify只抓取h1/h2/h3作为目录，且不计入name的序号
+      loadSidebar: false, // 不加载_sidebar.md，保留自动抓取
       markdown: {
         anchor: {
           level: [1,2,3],
-          permalink: false // 关闭锚点自动序号
+          permalink: false // 关闭锚点序号干扰
         }
       }
     }
