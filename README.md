@@ -433,7 +433,7 @@ h3::before {
 
 输入网址后，在登录页面输入账号、密码→点击"登录"按钮→系统将对输入的账号和密码进行登录验证。
 
-![](./images/media/image1.png){width="6.759722222222222in" height="3.5208333333333335in"}
+![](./images/media/image1.png)
 
 ### 小程序端
 
@@ -441,7 +441,7 @@ h3::before {
 
   现阶段仅支持微信扫描二维码方式进入小程序。
 
-  ![企业微信截图_17700167405341](./images/media/image2.png){width="2.092361111111111in" height="1.96875in"}
+  ![企业微信截图_17700167405341](./images/media/image2.png)
 
 - 登录流程
 
@@ -469,13 +469,13 @@ h3::before {
 
 4.  密码需同时包含大小写字母、数字和特殊字符，长度8位以上。
 
-    ![](./images/media/image3.png){width="5.75625in" height="2.8958333333333335in"}
+    ![](./images/media/image3.png)
 
 ### 修改用户信息-用户管理页面
 
   进入系统后，选择【用户管理】→【用户管理】→点击"编辑"进入编辑用户页面→修改用户信息→点击"确定"完成修改操作。
 
-![](./images/media/image4.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image4.png)
 
 ### 修改用户信息-个人中心页面
 
@@ -485,7 +485,7 @@ h3::before {
 
   注：用户角色不支持编辑。
 
-  ![](./images/media/image5.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image5.png)
 
 - **密码修改**
 
@@ -493,13 +493,13 @@ h3::before {
 
   注：修改密码成功后，3秒后自动跳转至登录页面。
 
-  ![](./images/media/image6.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image6.png)
 
 - **头像修改**
 
   鼠标指针悬停（hover）至登录账号名称→点击"个人中心"或"修改密码"，进入个人中心页面→点击"更换头像"→点击"选择照片"上传头像→点击"确认修改"完成修改。
 
-  ![](./images/media/image7.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image7.png)
 
 ### 删除用户
 
@@ -507,7 +507,7 @@ h3::before {
 
   注：删除用户后，该用户将无法登录系统，且无法恢复，请谨慎操作！
 
-![](./images/media/image8.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image8.png)
 
 ## 机构管理
 
@@ -515,7 +515,7 @@ h3::before {
 
   进入系统后，选择【用户管理】→【机构管理】→点击"新增"进入新增机构页面→填写机构信息→点击"确定"完成新增机构操作。
 
-![](./images/media/image9.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image9.png)
 
   注：1、机构类型包括：班级、研究所、党支部、团支部、学院党委、学院团委；
 
@@ -529,7 +529,7 @@ h3::before {
 
   进入系统后，选择【用户管理】→【机构管理】→点击"编辑"进入编辑机构页面→修改机构信息→点击"确定"完成编辑机构操作。
 
-![](./images/media/image10.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image10.png)
 
 ### 开启、停用机构
 
@@ -545,7 +545,7 @@ h3::before {
 
     2、计算机学院不支持停用操作。
 
-![](./images/media/image11.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image11.png)
 
 ### 删除机构
 
@@ -555,7 +555,7 @@ h3::before {
 
 2.  计算机学院不支持删除操作。
 
-![](./images/media/image12.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image12.png)
 
 ## 角色管理
 
@@ -565,11 +565,11 @@ h3::before {
 
   注：角色标识具有唯一性，不可重复添加。
 
-  ![](./images/media/image13.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image13.png)
 
 ### 编辑角色
 
-  进入系统后，选择【用户管理】→【角色管理】→点击"编辑"进入编辑角色页面→修改角色信息→点击"确定"完成编辑角色操作。![](./images/media/image14.png){width="5.75625in" height="2.8958333333333335in"}
+  进入系统后，选择【用户管理】→【角色管理】→点击"编辑"进入编辑角色页面→修改角色信息→点击"确定"完成编辑角色操作。![](./images/media/image14.png)
 
 ### 删除角色
 
@@ -577,7 +577,7 @@ h3::before {
 
   注：删除角色可能导致数据丢失或所属角色账号无法登录等后果，且无法恢复，请谨慎操作！
 
-![](./images/media/image15.png){width="5.768055555555556in" height="2.8979166666666667in"}
+![](./images/media/image15.png)
 
 ### 设置权限
 
@@ -585,9 +585,9 @@ h3::before {
 
   进入系统后，选择【用户管理】→【角色管理】→选择角色→点击"设置权限"进入权限设置页面→勾选权限→点击"确定"完成权限设置。
 
-![](./images/media/image16.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image16.png)
 
-![](./images/media/image17.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image17.png)
 
 - **权限分配**
 
@@ -608,7 +608,7 @@ h3::before {
 
 #### 数据管理首页
 
-![](./images/media/image18.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image18.png)
 
 #### 数据管理-评价时段-添加
 
@@ -616,9 +616,9 @@ h3::before {
 
 注：在评价时段编辑状态下，可以拖动评价学期至任一个评价年份中。
 
-![](./images/media/image19.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image19.png)
 
-![](./images/media/image20.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image20.png)
 
 #### 数据管理-评价时段-编辑、删除
 
@@ -628,7 +628,7 @@ h3::before {
 
 2、评价年份不支持重命名操作。
 
-![](./images/media/image21.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image21.png)
 
 #### 数据导入页面
 
@@ -640,9 +640,9 @@ h3::before {
 
 3、若选择局部导入，培养类型为必选项。
 
-![](./images/media/image22.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image22.png)
 
-![](./images/media/image23.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image23.png)
 
 #### 数据编辑页面
 
@@ -650,7 +650,7 @@ h3::before {
 
 注：编辑数据后，记得再次点击"生成评价报告"更新数据。
 
-![](./images/media/image24.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image24.png)
 
 #### 生成评价报告
 
@@ -658,7 +658,7 @@ h3::before {
 
 注：若该评价时段暂未导入数据，则无法点击生成评价报告。
 
-![](./images/media/image25.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image25.png)
 
 ### 评价结果
 
@@ -676,15 +676,15 @@ h3::before {
 
 - 学院党委评价报告
 
-  ![](./images/media/image26.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image26.png)
 
 - 党支部评价报告
 
-  ![](./images/media/image27.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image27.png)
 
 - 党员个人评价报告
 
-![](./images/media/image28.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image28.png)
 
 #### 评价报告-导出
 
@@ -700,7 +700,7 @@ h3::before {
 
 - 学院党委评价报告
 
-  ![](./images/media/image29.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image29.png)
 
 #### 评价报告-撤回
 
@@ -710,7 +710,7 @@ h3::before {
 
 2、撤回报告后，党支部以及学生个人将无法查看报告。
 
-![](./images/media/image30.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image30.png)
 
 ## 小程序端
 
@@ -732,7 +732,7 @@ h3::before {
 
 注：个人信息关乎后续的党员发展，请务必尽早完善。
 
-![d3aba0b7cc3351953e1cff96609868c](./images/media/image31.jpeg){width="2.779861111111111in" height="5.905555555555556in"}
+![d3aba0b7cc3351953e1cff96609868c](./images/media/image31.jpeg)
 
 ### 考核评价报告首页
 
@@ -750,7 +750,7 @@ h3::before {
 
 3.  **评价时段面板：**点击对应的评价时段即可查看评价报告明细。
 
-    ![](./images/media/image32.png){width="5.758333333333334in" height="4.060416666666667in"}
+    ![](./images/media/image32.png)
 
 ### 评价报告明细-学院党委
 
@@ -762,13 +762,13 @@ h3::before {
 
 **支部排名情况：**默认展示该评价时段下各支部前20%的党员人数以及对比上一评价时段的排名变化情况。
 
-![](./images/media/image33.png){width="5.7625in" height="5.99375in"}
+![](./images/media/image33.png)
 
 **学院内排名前20%的党员人数：**默认展示该评价时段下学院内前20%的党员情况。可根据需求切换不通指标以及排名阈值。
 
 **党员个人排名top10：**默认展示该评价时段下各指标排名前10的党员姓名以及综合排名下该党员对比上一评价时段的排名变化情况。
 
-![](./images/media/image34.png){width="5.766666666666667in" height="6.096527777777778in"}
+![](./images/media/image34.png)
 
 ### 评价报告明细-二级支部
 
@@ -784,7 +784,7 @@ h3::before {
 
 **支部内党员排名：**展示该评价时段下的党支部内各指标的党员排名情况以及综合排名下该党员对比上一评价时段的排名变化情况。
 
-![](./images/media/image35.png){width="5.75625in" height="4.179861111111111in"}
+![](./images/media/image35.png)
 
 ### 评价报告明细-党员个人
 
@@ -792,11 +792,11 @@ h3::before {
 
 **党委、二级党支部：**进入评价时段后，切换至【党员个人】页面，点击党员名字即可查看该党员的评价报告。
 
-![](./images/media/image36.png){width="5.758333333333334in" height="5.215277777777778in"}
+![](./images/media/image36.png)
 
 **学生：**进入小程序后，点击评价时段即可查看本人在该评价时段下的评价报告。
 
-![](./images/media/image37.png){width="5.7652777777777775in" height="5.082638888888889in"}
+![](./images/media/image37.png)
 
 **基础信息：**主要展示学生姓名、学工号以及所在党支部。
 
@@ -806,7 +806,7 @@ h3::before {
 
 **排名变化趋势：**主要展示该学生所有评价时段里各指标在学院、支部内的排名情况。
 
-![](./images/media/image38.png){width="5.760416666666667in" height="4.072916666666667in"}
+![](./images/media/image38.png)
 
 # 党群组织管理
 
@@ -822,15 +822,15 @@ h3::before {
 
 2、组织状态默认开启。
 
-![](./images/media/image39.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image39.png)
 
 - 新增党组织
 
-  ![](./images/media/image40.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image40.png)
 
 - 新增团组织
 
-  ![](./images/media/image41.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image41.png)
 
 ### 查看组织
 
@@ -838,19 +838,19 @@ h3::before {
 
 - 查看学院党委信息
 
-  ![](./images/media/image42.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image42.png)
 
 - 查看党支部信息
 
-  ![](./images/media/image43.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image43.png)
 
 - 查看学院团委信息
 
-  ![](./images/media/image44.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image44.png)
 
 - 查看团支部信息
 
-  ![](./images/media/image45.png){width="5.75625in" height="2.8958333333333335in"}
+  ![](./images/media/image45.png)
 
 ### 编辑组织
 
@@ -872,9 +872,9 @@ h3::before {
   本科生团支部   本科生团支部(对应的同名机构，一般只有一个)、所有"培养类型"为本科生的班级
 -------------- ----------------------------------------------------------------------------
 
-![](./images/media/image46.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image46.png)
 
-![](./images/media/image47.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image47.png)
 
 ### 开启、停用组织
 
@@ -882,7 +882,7 @@ h3::before {
 
 注：组织停用条件：该组织无任何关联机构。
 
-![](./images/media/image48.png){width="5.75625in" height="2.8958333333333335in"}
+![](./images/media/image48.png)
 
 ### 删除组织
 
@@ -892,7 +892,7 @@ h3::before {
 
 2.  计算机学院党委、计算机学院团委、群众均不支持删除操作。
 
-    ![](./images/media/image49.png){width="5.75625in" height="2.8958333333333335in"}
+    ![](./images/media/image49.png)
 
 # 党员基础信息管理
 
@@ -902,7 +902,7 @@ h3::before {
 
 2.  进入【党务管理-党员基础信息管理】页面，选择所有查看修改基础信息的学生，点击"编辑"按钮，即可进入编辑页面，编辑完成后点击"提交"按钮即可完成编辑操作。
 
-![](./images/media/image50.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image50.png)
 
 # 党员发展管理
 
@@ -916,7 +916,7 @@ h3::before {
 
 3.  按要求填写个人相关信息，点击"提交"按钮即可开启入党流程。
 
-![](./images/media/image51.png){width="2.6277777777777778in" height="4.948611111111111in"}
+![](./images/media/image51.png)
 
 ### 入党申请书递交
 
@@ -934,7 +934,7 @@ h3::before {
 
 4.  核结果不通过的，可按退回原因修改后重新提交。
 
-![](./images/media/image52.png){width="2.1152777777777776in" height="4.527777777777778in"} ![6dc09b471a6e42573d5fed3e42388cb0](./images/media/image53.jpeg){width="2.138888888888889in" height="4.527777777777778in"} ![](./images/media/image54.png){width="2.152083333333333in" height="4.527777777777778in"}
+![](./images/media/image52.png) ![6dc09b471a6e42573d5fed3e42388cb0](./images/media/image53.jpeg) ![](./images/media/image54.png)
 
 #### 党支部管理员（PC端）
 
@@ -954,7 +954,7 @@ h3::before {
 
 2.  已上传过入党申请的学生，不会出现在选择列表中。
 
-![](./images/media/image55.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image55.png)
 
 ### 入党申请书审核
 
@@ -966,7 +966,7 @@ h3::before {
 
 3.  确定审核结果；点击"审核通过"，完成审核并进入下一环节；点击"审核不通过"，需填写审核不通过理由并通知申请人重新提交，直至审核通过。
 
-    ![](./images/media/image56.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image56.png)
 
     **补充事项**
 
@@ -974,9 +974,9 @@ h3::before {
 
 1.  也可点击"批量操作-入党申请-审核入党申请"进入批量审核页面，审核操作同上。
 
-    ![](./images/media/image57.png){width="6.766666666666667in" height="2.410416666666667in"}
+    ![](./images/media/image57.png)
 
-    ![](./images/media/image58.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image58.png)
 
 ### 党组织派人谈话
 
@@ -990,9 +990,9 @@ h3::before {
 
 2.  进入【批量操作-流转-指派谈话】页面，为申请人安排谈话人并设置谈话记录截止提交时间，点击"确定完成指派操作"。
 
-    ![](./images/media/image59.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image59.png)
 
-![](./images/media/image60.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image60.png)
 
 ##### 上传谈话记录
 
@@ -1000,11 +1000,11 @@ h3::before {
 
 1.  进入【入党申请人】列表，选择所要上传谈话记录的申请人，点击其操作栏"上传谈话"按钮；
 
-    ![](./images/media/image61.png){width="6.759722222222222in" height="3.390277777777778in"}
+    ![](./images/media/image61.png)
 
 2.  进入【上传谈话】页面，完善谈话信息，点击"确定"按钮；
 
-    ![](./images/media/image62.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image62.png)
 
 3.  返回【入党申请人】列表首页，再次点击申请人操作栏"确认谈话"按钮，完成上传操作。
 
@@ -1016,7 +1016,7 @@ h3::before {
 
 3.  确定审核结果，点击"审核通过"，完成审核并进入下一环节；点击"审核不通过"，需填写审核不通过理由并通知申请人重新提交，直至审核通过。
 
-    ![](./images/media/image63.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image63.png)
 
     **补充事项**
 
@@ -1024,9 +1024,9 @@ h3::before {
 
 1.  也可点击"批量操作-首次谈话-审核谈话记录"进入批量审核页面，审核操作同上。
 
-    ![](./images/media/image64.png){width="6.767361111111111in" height="2.423611111111111in"}
+    ![](./images/media/image64.png)
 
-![](./images/media/image65.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image65.png)
 
 #### 谈话人（小程序端）
 
@@ -1038,7 +1038,7 @@ h3::before {
 
 2.  填写完毕点击"确认安排谈话日程"完成安排谈话操作，谈话日程同步至申请人端。
 
-    ![4c6d844e6151acbe78ca614cc7cf50c1](./images/media/image66.jpeg){width="2.138888888888889in" height="4.527777777777778in"} ![2a74ab16aabe321b3c7e1cecd5e2161d](./images/media/image67.jpeg){width="2.1416666666666666in" height="4.527777777777778in"}
+    ![4c6d844e6151acbe78ca614cc7cf50c1](./images/media/image66.jpeg) ![2a74ab16aabe321b3c7e1cecd5e2161d](./images/media/image67.jpeg)
 
 ##### 提交谈话记录
 
@@ -1048,7 +1048,7 @@ h3::before {
 
 3.  党支部审核通过则进入下一环节，反之需重新提交直至审核通过。
 
-    ![86b456c8eb83237354b0fcea6d1711f0](./images/media/image68.jpeg){width="2.140972222222222in" height="4.527777777777778in"} ![b0e27b8b7387d2840e6eed2cae4aa55e](./images/media/image69.jpeg){width="2.1444444444444444in" height="4.527777777777778in"}
+    ![86b456c8eb83237354b0fcea6d1711f0](./images/media/image68.jpeg) ![b0e27b8b7387d2840e6eed2cae4aa55e](./images/media/image69.jpeg)
 
 ### 申请人公示
 
@@ -1058,7 +1058,7 @@ h3::before {
 
 1.  进入【入党申请人】列表，选择确认公示的申请人，点击其操作栏的"公示管理"按钮；
 
-    ![](./images/media/image70.png){width="6.759722222222222in" height="3.401388888888889in"}
+    ![](./images/media/image70.png)
 
 ##### 创建公示
 
@@ -1068,9 +1068,9 @@ h3::before {
 
 1.  建议创建公示前，先点击"公示设置"按钮，填写公示基础信息。后续再创建公示时，可自动识别并填入公示基础信息，无需再次填写。
 
-    ![](./images/media/image71.png){width="6.759722222222222in" height="3.3868055555555556in"}
+    ![](./images/media/image71.png)
 
-    ![](./images/media/image72.png){width="3.841666666666667in" height="3.1104166666666666in"}
+    ![](./images/media/image72.png)
 
 ##### 设置公示内容
 
@@ -1082,7 +1082,7 @@ h3::before {
 
 4.  点击"确认并生成公示"按钮生成公示文件。
 
-![](./images/media/image73.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image73.png)
 
 ##### 待公示/公示中/公示期结束
 
@@ -1098,13 +1098,13 @@ h3::before {
 
 1.  点击"导出公示文件"按钮即可导出页面中的文件至本地。
 
-    ![](./images/media/image74.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image74.png)
 
 ##### 生成公示报告
 
 到达公示期结束后，点击"生成公示报告"按钮生成公示报告，进入【生成公示报告】页。
 
-![](./images/media/image75.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image75.png)
 
 进入【生成公示报告】页后，点击"完成公示"按钮即可完成公示流程。
 
@@ -1112,7 +1112,7 @@ h3::before {
 
 1.  点击"导出公示报告"按钮即可导出页面中的文件至本地。
 
-![](./images/media/image76.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image76.png)
 
 ## 入党积极分子的确定和培养教育阶段
 
@@ -1126,7 +1126,7 @@ h3::before {
 
 3.  完成发展条件审核后，点击"流转推优流程"进入推优环节。
 
-![](./images/media/image77.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image77.png)
 
 ### 团支部推优/党员推优
 
@@ -1148,7 +1148,7 @@ h3::before {
 
 2.  审核结果不通过的，可按退回原因修改后重新提交。
 
-![47cb3d46039af09e1c111ea3119a994d](./images/media/image78.jpeg){width="2.089583333333333in" height="4.527777777777778in"} ![b0280fac8915cce409fc12e0d28b134b](./images/media/image79.jpeg){width="2.089583333333333in" height="4.527777777777778in"} ![8b259e4360872bf4a09838d8e1d7d871](./images/media/image80.jpeg){width="2.089583333333333in" height="4.527777777777778in"}
+![47cb3d46039af09e1c111ea3119a994d](./images/media/image78.jpeg) ![b0280fac8915cce409fc12e0d28b134b](./images/media/image79.jpeg) ![8b259e4360872bf4a09838d8e1d7d871](./images/media/image80.jpeg)
 
 #### 党支部管理员（PC端）
 
@@ -1158,13 +1158,13 @@ h3::before {
 
 1.  进入【积极分子】列表，选择所要审核推优登记表的申请人，点击其操作栏的"处理推优结果"按钮；
 
-    ![](./images/media/image81.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image81.png)
 
 2.  进入【批量操作-流转-处理推优结果】页，查看推优登记表并选择推优时间；
 
 3.  确定推优结果；选择"通过"，完成推优流程并进入下一环节；点击"不通过"，申请人状态变为：团/党员推荐-不通过。可点击"重新发展"按钮回退至从积极分子初始状态重新发展。
 
-![](./images/media/image82.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image82.png)
 
 ### 入党积极分子名单公示
 
@@ -1174,13 +1174,13 @@ h3::before {
 
 1.  进入【积极分子】列表，选择进入名单公示的申请人，点击其操作栏的"进入公示"按钮；
 
-    ![](./images/media/image83.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image83.png)
 
 2.  进入【公示管理】页面，点击"新增公示"按钮，新增一条入党积极分子名单公示。
 
     公示流程同【第六章 党员发展管理-第一节 入党申请阶段-[[申请人公示]{.underline}](#申请人公示)】，公示流程参考如下图：
 
-    ![公示管理2](./images/media/image84.png){width="2.942361111111111in" height="4.527777777777778in"}
+    ![公示管理2](./images/media/image84.png)
 
 ### 填报支委会议时间
 
@@ -1190,9 +1190,9 @@ h3::before {
 
 1.  进入【积极分子】列表，选择所要填写支委会议时间的申请人，点击"填报支委会议时间"按钮填写支委会议时间；
 
-![](./images/media/image85.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image85.png)
 
-![](./images/media/image86.png){width="6.759722222222222in" height="3.401388888888889in"}
+![](./images/media/image86.png)
 
 ### 上级党委备案
 
@@ -1204,17 +1204,17 @@ h3::before {
 
 1.  进入【积极分子】列表，选择所要进入上级党委备案的积极分子，点击其操作栏的"流转党委备案"按钮进入【备案管理】页（或者点击批量操作按钮）；
 
-    ![](./images/media/image87.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image87.png)
 
 2.  点击"新增备案"按钮，新增一条备案；
 
 3.  选择备案填表时间，勾选列表中的名单，点击"确认并生成备案表"；
 
-    ![](./images/media/image88.png){width="6.759722222222222in" height="3.401388888888889in"}
+    ![](./images/media/image88.png)
 
 4.  查看备案是否存在的问题，无问题则点击"提交备案"至学院党委，待党委确认并返回备案结果。
 
-![](./images/media/image89.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image89.png)
 
 #### 学院党委（PC端）
 
@@ -1224,13 +1224,13 @@ h3::before {
 
 1.  进入【积极分子】列表，选择所要审核备案结果的申请人，点击其操作栏的"查看备案进度"按钮进入【备案管理】页（或者点击批量操作按钮）；
 
-    ![](./images/media/image90.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image90.png)
 
 2.  选择备案记录，点击"详情"按钮进入备案结果页；
 
 3.  填写备案时间并确定备案结果；选择"通过"，完成备案流程并进入下一环节；选择"不通过"，申请人状态变为：党委备案-不通过。可点击"重新发展"按钮回退至从积极分子阶段初始状态重新发展。
 
-    ![](./images/media/image91.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image91.png)
 
 ### 指定培养联系人及公示
 
@@ -1242,17 +1242,17 @@ h3::before {
 
 2.  为积极分子选择培养联系人；
 
-    ![](./images/media/image92.png){width="6.759722222222222in" height="3.401388888888889in"}
+    ![](./images/media/image92.png)
 
 3.  指定培养联系人后，选择积极分子，点击其操作栏的"进入公示"按钮（或点击批量操作按钮）；
 
-    ![](./images/media/image93.png){width="6.759722222222222in" height="3.401388888888889in"}
+    ![](./images/media/image93.png)
 
 4.  进入【公示管理】页面，点击"新增公示"按钮，新增一条入党积极分子及培养联系人名单公示。
 
 公示流程同【第六章 党员发展管理-第一节 入党申请阶段-[[申请人公示]{.underline}](#申请人公示)】，公示流程参考如下图：
 
-![公示管理2](./images/media/image84.png){width="2.942361111111111in" height="4.527777777777778in"}
+![公示管理2](./images/media/image84.png)
 
 ### 培育考察
 
@@ -1274,7 +1274,7 @@ h3::before {
 
 2.  审核结果不通过的，可按退回原因修改后重新提交。
 
-    ![](./images/media/image94.png){width="2.140972222222222in" height="4.527777777777778in"} ![b2995a9083a38196c83c3870ee489a32](./images/media/image95.jpeg){width="2.14375in" height="4.527777777777778in"} ![ff49346106ef89aba027c87705daf276](./images/media/image96.jpeg){width="2.1444444444444444in" height="4.527777777777778in"}
+    ![](./images/media/image94.png) ![b2995a9083a38196c83c3870ee489a32](./images/media/image95.jpeg) ![ff49346106ef89aba027c87705daf276](./images/media/image96.jpeg)
 
 ##### 查看季度谈话
 
@@ -1284,7 +1284,7 @@ h3::before {
 
 2.  点击思想汇报季度谈话卡片的"查看记录"，查看季度谈话提交情况。
 
-    ![](./images/media/image94.png){width="2.140972222222222in" height="4.527777777777778in"} ![b2995a9083a38196c83c3870ee489a32](./images/media/image95.jpeg){width="2.14375in" height="4.527777777777778in"} ![141ada1e36d3caab5142f97828b664c7](./images/media/image97.jpeg){width="2.142361111111111in" height="4.527777777777778in"}
+    ![](./images/media/image94.png) ![b2995a9083a38196c83c3870ee489a32](./images/media/image95.jpeg) ![141ada1e36d3caab5142f97828b664c7](./images/media/image97.jpeg)
 
 ##### 参与积极分子培训班
 
@@ -1306,7 +1306,7 @@ h3::before {
 
 4.  未入选或未结业的培训班，可继续报名参与下一次培训班。
 
-    ![](./images/media/image94.png){width="2.140972222222222in" height="4.527777777777778in"} ![b2995a9083a38196c83c3870ee489a32](./images/media/image95.jpeg){width="2.14375in" height="4.527777777777778in"} ![e5f1bcd8279e0d62c431a54f808b081e](./images/media/image98.jpeg){width="2.1368055555555556in" height="4.527777777777778in"}
+    ![](./images/media/image94.png) ![b2995a9083a38196c83c3870ee489a32](./images/media/image95.jpeg) ![e5f1bcd8279e0d62c431a54f808b081e](./images/media/image98.jpeg)
 
 #### 培养联系人（小程序端）
 
@@ -1328,7 +1328,7 @@ h3::before {
 
 3.  审核结果不通过的，可按退回原因修改后重新提交。
 
-![85e1a302bf54b1a493456257861f0127](./images/media/image99.jpeg){width="2.1416666666666666in" height="4.527777777777778in"} ![606d18731155e7411f21e037ef2e5f71](./images/media/image100.jpeg){width="2.138888888888889in" height="4.527777777777778in"} ![86510d966cb934c50a71415460987b39](./images/media/image101.jpeg){width="2.14375in" height="4.527777777777778in"}
+![85e1a302bf54b1a493456257861f0127](./images/media/image99.jpeg) ![606d18731155e7411f21e037ef2e5f71](./images/media/image100.jpeg) ![86510d966cb934c50a71415460987b39](./images/media/image101.jpeg)
 
 #### 党支部管理员（PC端）
 
@@ -1336,13 +1336,13 @@ h3::before {
 
 进入【积极分子】列表，选择所要审核培育考察任务的积极分子，点击其操作栏的"查看考察进度"按钮进入【培育考察】页（或者点击培育考察按钮）。
 
-![](./images/media/image102.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image102.png)
 
 ##### 审核思想汇报
 
 进入【培育考察】页，点击"审核思想汇报"按钮进入批量审核页面，或点击积极分子操作列的"详情"按钮进入个人审核页面。
 
-![](./images/media/image103.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image103.png)
 
 **批量审核：**
 
@@ -1356,7 +1356,7 @@ h3::before {
 
 1.  思想汇报催交。点击"催交"按钮，可发送催交消息至未提交思想汇报或思想汇报审核不通过的积极分子。
 
-![](./images/media/image104.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image104.png)
 
 **单个审核：**
 
@@ -1368,13 +1368,13 @@ h3::before {
 
 4.  审核结果同步至积极分子。若审核不通过，积极分子可重新提交思想汇报直至审核通过。
 
-![](./images/media/image105.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image105.png)
 
 ##### 审核谈话记录
 
 进入【培育考察】页，点击"审核谈话记录"按钮进入批量审核页面，或点击积极分子操作列的"详情"按钮进入个人审核页面。
 
-![](./images/media/image106.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image106.png)
 
 **批量审核：**
 
@@ -1388,7 +1388,7 @@ h3::before {
 
 1.  谈话记录催交。点击"催交"按钮，可发送催交消息至未提交谈话记录或谈话记录审核不通过的积极分子。
 
-![](./images/media/image107.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image107.png)
 
 **单个审核：**
 
@@ -1400,13 +1400,13 @@ h3::before {
 
 4.  审核结果同步至培养联系人。若审核不通过，培养联系人可重新提交谈话记录直至审核通过。
 
-    ![](./images/media/image105.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image105.png)
 
 ##### 确认积极分子培训班入选名单
 
 1.  学院党委点击"流转支部筛选"按钮后，党支部可进入【培训管理】页面，选择培训班状态为："支部筛选中"，点击"筛选报名名单"进入【培训管理-详情】页面；
 
-![](./images/media/image108.png){width="6.749305555555556in" height="1.1513888888888888in"}
+![](./images/media/image108.png)
 
 2.  确认入选名单，点击"提交党委"按钮可将入选名单推送至学院党委。
 
@@ -1414,13 +1414,13 @@ h3::before {
 
 1.  点击报名积极分子的上移、下移操作可调整入选顺序；
 
-2.  支部报名人数小于等于支部名额，默认所有报名积极分子全部入选。![](./images/media/image109.png){width="6.759722222222222in" height="3.401388888888889in"}
+2.  支部报名人数小于等于支部名额，默认所有报名积极分子全部入选。![](./images/media/image109.png)
 
 ##### 考察通过
 
 所有培训任务完成且通过后，点击"考察通过"完成积极分子阶段的培育考察，流转下一阶段。
 
-![](./images/media/image110.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image110.png)
 
 #### 学院党委管理员（PC端）
 
@@ -1430,7 +1430,7 @@ h3::before {
 
 1.  进入【培训管理】页，点击"创建培训班"按钮，进入【培训管理-详情】页；
 
-    ![](./images/media/image111.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image111.png)
 
 2.  填写培训班基础信息，注意培训班类型选择"积极分子培训班"，分配支部名额后滑到最底下点击"保存并发布"按钮完成培训班创建。
 
@@ -1440,41 +1440,41 @@ h3::before {
 
 2.  到达报名时间，培训班状态变为：报名中。
 
-![](./images/media/image112.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image112.png)
 
 ##### 流转支部筛选
 
 到达报名截止时间，点击"流转支部筛选"按钮，等待支部返回入选名单。
 
-![](./images/media/image113.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image113.png)
 
 ##### 确认入选名单
 
 1.  支部提交入选名单至学院党委后，点击"确认入选名单"确认入选名单。
 
-![](./images/media/image114.png){width="6.754166666666666in" height="1.4027777777777777in"}
+![](./images/media/image114.png)
 
 2.  进入【培训管理-详情】页后，待所有支部提交入选名单后，点击"确认入选名单"完成最终名单确认，培训班进入"待培训"状态，入选结果同步至积极分子。
 
-![](./images/media/image115.png){width="6.759722222222222in" height="3.401388888888889in"}
+![](./images/media/image115.png)
 
 ##### 开始培训
 
 点击"开始培训"按钮，培训班状态变为：培训中。培训班状态同步至积极分子。
 
-![](./images/media/image116.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image116.png)
 
 ##### 结束培训
 
 到达培训截止时间后，培训班结束，也可手动点击"结束培训"按钮提前结束培训班。
 
-![](./images/media/image117.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image117.png)
 
 ##### 确认培训结果
 
 培训班结束后，填写结业时间和结业情况，点击"确认培训结果"完成培训班，培训结果同步至积极分子。结业情况选择：未结业，则无结业时间，积极分子需再次参加培训班直至准予结业。
 
-![](./images/media/image118.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image118.png)
 
 ## 入党重点发展对象的确定和培养教育阶段
 
@@ -1488,7 +1488,7 @@ h3::before {
 
 3.  完成发展条件审核后，点击"流转推优流程"进入推优环节。
 
-![](./images/media/image119.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image119.png)
 
 ### 团支部推优/党员推优
 
@@ -1510,7 +1510,7 @@ h3::before {
 
 2.  审核结果不通过的，可按退回原因修改后重新提交。
 
-![32611527c197bc3ea2e3037a8a48ede5](./images/media/image120.jpeg){width="2.138888888888889in" height="4.527777777777778in"} ![aecacf7bf761fdad35dad5e7c31f12da](./images/media/image121.jpeg){width="2.1444444444444444in" height="4.527777777777778in"} ![9d9c85dee2841fc9dc7b1a5b4083eea0](./images/media/image122.jpeg){width="2.1479166666666667in" height="4.527777777777778in"}
+![32611527c197bc3ea2e3037a8a48ede5](./images/media/image120.jpeg) ![aecacf7bf761fdad35dad5e7c31f12da](./images/media/image121.jpeg) ![9d9c85dee2841fc9dc7b1a5b4083eea0](./images/media/image122.jpeg)
 
 #### 党支部管理员（PC端）
 
@@ -1520,7 +1520,7 @@ h3::before {
 
 1.  进入【发展对象】列表，选择所要审核推优登记表的积极分子，点击其操作栏的"推优管理"按钮（或者点击批量操作按钮）；
 
-    ![](./images/media/image123.png){width="6.759722222222222in" height="3.401388888888889in"}
+    ![](./images/media/image123.png)
 
 2.  进入【批量操作-流转-处理推优结果】页，查看推优登记表并选择推优时间；
 
@@ -1530,7 +1530,7 @@ h3::before {
 
 1.  党支部对积极分子上传的推优登记表有查看、删除和代理上传的操作权限。
 
-![](./images/media/image124.png){width="6.759722222222222in" height="3.401388888888889in"}
+![](./images/media/image124.png)
 
 ### 入党重点发展对象座谈会
 
@@ -1540,7 +1540,7 @@ h3::before {
 
 1.  进入【发展对象】列表，选择所要完成座谈会的积极分子，点击其操作栏的"座谈会管理"按钮（或者点击批量操作按钮）；
 
-    ![](./images/media/image125.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image125.png)
 
 2.  进入【批量操作-流转-座谈会管理】页，填写座谈会时间、地点；
 
@@ -1556,7 +1556,7 @@ h3::before {
 
 2.  批量上传时，必须严格按照文件名称格式（姓名+学号），否是无法识别文件。
 
-![](./images/media/image126.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image126.png)
 
 ### 支委会议
 
@@ -1566,7 +1566,7 @@ h3::before {
 
 1.  进入【发展对象】列表，选择所要完成支委会议的积极分子，点击其操作栏的"进入支委会议"按钮（或者点击批量操作按钮）；
 
-    ![](./images/media/image127.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image127.png)
 
 2.  进入【批量操作-流转-填报支委会议时间】页，点击"导出表决票"；
 
@@ -1578,7 +1578,7 @@ h3::before {
 
 1.  表决结果选择"不通过"，申请人状态变为：支委会议-不通过。可点击"重新发展"按钮回退至发展对象初始状态重新发展；
 
-![2ae8a88ea2a20a92a7ebde5dc72c514f](./images/media/image128.png){width="6.759722222222222in" height="3.39375in"}
+![2ae8a88ea2a20a92a7ebde5dc72c514f](./images/media/image128.png)
 
 ### 上级党委备案
 
@@ -1592,7 +1592,7 @@ h3::before {
 
 1.  进入【发展对象】列表，选择所要进入上级党委备案的积极分子，点击其操作栏的"进入备案"按钮进入【党委备案】页（或者点击批量操作按钮）；
 
-    ![](./images/media/image129.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image129.png)
 
 2.  点击"新增备案"按钮，新增一条备案；
 
@@ -1610,7 +1610,7 @@ h3::before {
 
 1.  进入【发展对象】列表，选择所要审核备案结果的积极分子，点击"备案管理"按钮进入【党委备案】页；
 
-    ![](./images/media/image130.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image130.png)
 
 2.  选择处于备案中的备案记录，点击"详情"按钮进入备案结果页；
 
@@ -1624,7 +1624,7 @@ h3::before {
 
 1.  进入【发展对象】列表，点击"公示管理"按钮；
 
-    ![](./images/media/image131.png){width="6.759722222222222in" height="3.390277777777778in"}
+    ![](./images/media/image131.png)
 
 2.  进入【公示管理】页面，点击"新增公示"按钮，新增一条确定入党重点发展对象名单的公示，点击"详情"进入公示；
 
@@ -1632,17 +1632,17 @@ h3::before {
 
 4.  选择公示落款日期，勾选公示名单后按照公示流程完成公示。
 
-    ![](./images/media/image132.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image132.png)
 
     公示流程同【第六章 党员发展管理-第一节 入党申请阶段-[[申请人公示]{.underline}](#申请人公示)】，公示流程参考如下图：
 
-    ![公示管理2](./images/media/image84.png){width="2.942361111111111in" height="4.527777777777778in"}
+    ![公示管理2](./images/media/image84.png)
 
 **补充事项：**
 
 1.  设置公示内容时，可切换至批量填写支部联系人信息卡片，在这个新标签页里，只需为每个党支部填写一次对应的联系人和联系方式，系统会自动将每个党支部的联系人信息，同步填充到公示名单中该支部下所有人员的对应字段里，实现一次录入、批量生效。
 
-    ![](./images/media/image133.png){width="6.763194444444444in" height="1.4020833333333333in"}
+    ![](./images/media/image133.png)
 
 ### 确定入党介绍人
 
@@ -1654,13 +1654,13 @@ h3::before {
 
 2.  为发展对象选择入党介绍人。
 
-![](./images/media/image134.png){width="6.759722222222222in" height="3.401388888888889in"}
+![](./images/media/image134.png)
 
 ### 入党教育培育考察
 
 入党教育培育考察操作同【第二节 入党积极分子的确定和培养教育阶段-[[培育考察]{.underline}](#培育考察)】一致，参考流程图如下：
 
-![入党教育培育考察2](./images/media/image135.png){width="2.689583333333333in" height="4.527777777777778in"}
+![入党教育培育考察2](./images/media/image135.png)
 
 #### 发展对象（小程序端）
 
@@ -1782,17 +1782,17 @@ h3::before {
 
 1.  进入【发展对象】列表，点击"政审管理"按钮；
 
-![](./images/media/image136.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image136.png)
 
 2.  点击"新增政审"按钮，新增一条政审；
 
-![](./images/media/image137.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image137.png)
 
 ##### 确认名单
 
 新增政审后，点击"详情"进入【确定政审名单】页，勾选进入政审的发展对象，点击"确定政审名单"按钮。
 
-![](./images/media/image138.png){width="6.753472222222222in" height="1.35in"}
+![](./images/media/image138.png)
 
 ##### 填报政审信息
 
@@ -1800,17 +1800,17 @@ h3::before {
 
 2.  发展对象填报政审信息后，点击"详情"查看发展对象提交的政审信息，确认无误后点击"确认信息填报"按钮，进入下一步。
 
-    ![](./images/media/image139.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image139.png)
 
 ##### 下发函调信
 
 1.  按照要求填写党支部收件人、收件人电话、收件地址和落款时间，点击"生成函调信"按钮生成函调信；
 
-    ![](./images/media/image140.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image140.png)
 
 2.  生成函调信后，点击"导出函调信"按钮导出函调信；
 
-    ![](./images/media/image141.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image141.png)
 
 3.  点击"流转支部填写政审意见"按钮，流转至党支部；
 
@@ -1822,7 +1822,7 @@ h3::before {
 
 审议结果选择"通过"，完成政审流程并进入下一环节；选择"不通过"，发展对象状态变为：政治审查-不通过。可点击"重新发展"按钮回退至从发展对象初始状态重新发展。
 
-![](./images/media/image142.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image142.png)
 
 #### 党支部管理员（PC端）
 
@@ -1830,21 +1830,21 @@ h3::before {
 
 1.  进入【发展对象】列表，点击"政审管理"按钮；
 
-![](./images/media/image143.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image143.png)
 
 2.  选择处于"填写政审意见"状态的政审记录，点击"详情"按钮进入填写政审意见页面；
 
-    ![](./images/media/image144.png){width="6.766666666666667in" height="1.2319444444444445in"}
+    ![](./images/media/image144.png)
 
 3.  填写政审意见，点击"流转党委审议"按钮提交至学院党委。
 
-    ![](./images/media/image145.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image145.png)
 
 ##### 审核自传
 
 1.  进入【发展对象】列表，选择所要审核自传的发展对象，点击其操作栏的"审核自传"按钮（或者点击批量操作按钮）进入【审核自传】页；
 
-    ![](./images/media/image146.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image146.png)
 
 2.  点击左侧发展对象列表，右侧同步展示该发展对象基本信息以及自传；
 
@@ -1852,7 +1852,7 @@ h3::before {
 
 4.  审核结果同步至发展对象。若审核不通过，发展对象可重新提交自传直至审核通过。
 
-    ![](./images/media/image147.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image147.png)
 
 #### 发展对象（小程序端）
 
@@ -1864,7 +1864,7 @@ h3::before {
 
 2.  填写两名直系亲属信息，点击"提交"按钮提交至党支部。
 
-    ![feed07a7394ad523edc0771fd8906c94](./images/media/image148.jpeg){width="2.14375in" height="4.527777777777778in"} ![6a04fb7008217e36ffa5949d3f63dc49](./images/media/image149.jpeg){width="2.1479166666666667in" height="4.527777777777778in"}
+    ![feed07a7394ad523edc0771fd8906c94](./images/media/image148.jpeg) ![6a04fb7008217e36ffa5949d3f63dc49](./images/media/image149.jpeg)
 
 ##### 上传自传
 
@@ -1882,7 +1882,7 @@ h3::before {
 
 2.  审核结果不通过的，可按退回原因修改后重新提交。
 
-    ![feed07a7394ad523edc0771fd8906c94](./images/media/image148.jpeg){width="2.14375in" height="4.527777777777778in"} ![658a5904bd7a834589ad02f7b660463b](./images/media/image150.jpeg){width="2.1416666666666666in" height="4.527777777777778in"}
+    ![feed07a7394ad523edc0771fd8906c94](./images/media/image148.jpeg) ![658a5904bd7a834589ad02f7b660463b](./images/media/image150.jpeg)
 
 ### 党校培训
 
@@ -1890,7 +1890,7 @@ h3::before {
 
 党校培训操作同【第二节 入党积极分子的确定和培养教育阶段-培育考察】一致，参考流程图如下：
 
-![培训班2](./images/media/image151.png){width="2.6326388888888888in" height="4.527777777777778in"}
+![培训班2](./images/media/image151.png)
 
 创建发展对象培训班，设置报名时间、支部名额及发布范围→确认支部上报的入选名单并推送通知→培训结束后，确定结业情况（结业/未结业）。
 
@@ -1954,7 +1954,7 @@ h3::before {
 
 3.  完成发展条件审核后，点击"流转推优流程"进入推优环节。
 
-![](./images/media/image152.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image152.png)
 
 ### 流转座谈会及谈话
 
@@ -1964,7 +1964,7 @@ h3::before {
 
 安排谈话日程并上传谈话记录操作同【第二节 入党积极分子的确定和培养教育阶段-[[培育考察]{.underline}](#培育考察)】一致，参考流程图如下：
 
-![预备党员接收前谈话4](./images/media/image153.png){width="2.7111111111111112in" height="4.488194444444445in"}
+![预备党员接收前谈话4](./images/media/image153.png)
 
 ##### 安排谈话日程并上传谈话记录
 
@@ -1988,7 +1988,7 @@ h3::before {
 
 1.  进入【预备党员接收】列表，选择所要审核谈话的发展对象，点击其操作栏的"查看谈话记录"按钮（或者点击批量操作按钮）进入【审核谈话记录】页；
 
-    ![](./images/media/image154.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image154.png)
 
 2.  点击左侧发展对象列表，右侧同步展示该发展对象基本信息以及谈话记录；
 
@@ -2022,13 +2022,13 @@ h3::before {
 
 1.  点击"公示管理"按钮进入公示管理页面；
 
-    ![](./images/media/image155.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image155.png)
 
 2.  点击"新增公示"按钮，新增一条预备党员接收公示，按钮公示流程完成公示。
 
 公示流程同【第六章 党员发展管理-第一节 入党申请阶段-[[申请人公示]{.underline}](#申请人公示)】，公示流程参考如下图：
 
-![公示管理2](./images/media/image84.png){width="2.942361111111111in" height="4.527777777777778in"}
+![公示管理2](./images/media/image84.png)
 
 ### 支委会议
 
@@ -2038,7 +2038,7 @@ h3::before {
 
 1.  进入【预备党员接收】列表，选择所要完成支委会议的发展对象，点击其操作栏的"支委会议管理"按钮（或者点击批量操作按钮）；
 
-    ![](./images/media/image156.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image156.png)
 
 2.  进入【批量操作-流转-填报支委会议时间】页，填报会议时间；
 
@@ -2050,7 +2050,7 @@ h3::before {
 
 创建预审表，确定发展对象信息，将预审表提交至学院党委。
 
-1.  点击"预审管理/审批管理"按钮，进入【上级党委预审】页面；![](./images/media/image157.png){width="6.759722222222222in" height="3.39375in"}
+1.  点击"预审管理/审批管理"按钮，进入【上级党委预审】页面；![](./images/media/image157.png)
 
 2.  点击"新增预审"按钮，新增一条预审记录。
 
@@ -2060,13 +2060,13 @@ h3::before {
 
 2.  勾选发展对象名单，点击"确认并生成预审表"。
 
-![](./images/media/image158.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image158.png)
 
 ##### 提交预审表
 
 1.  点击"提交审批"，将预审表提交至学院党委审批。
 
-![](./images/media/image159.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image159.png)
 
 #### 学院党委管理员（PC端）
 
@@ -2076,7 +2076,7 @@ h3::before {
 
 1.  进入【预备党员接收】列表，选择所要完成预审的发展对象，点击其操作栏的"预审管理"按钮（或者点击批量操作按钮）；
 
-![](./images/media/image160.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image160.png)
 
 2.  进入【上级党委预审】管理页面，选择状态为"审批中"的预审记录，点击"详情"按钮进入审批完成页面；
 
@@ -2088,7 +2088,7 @@ h3::before {
 
 1.  党委点击"确认审批结果"后，若党支部预审选择"不通过"，发展对象状态变为：上级党委预审-不通过。可点击"重新发展"按钮回退至从预备党员接收阶段初始状态重新发展。
 
-![](./images/media/image161.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image161.png)
 
 ### 入党志愿书管理
 
@@ -2098,17 +2098,17 @@ h3::before {
 
 1.  点击"分配入党志愿书编号"，进入分配入党志愿书页面；
 
-    ![](./images/media/image162.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image162.png)
 
 2.  为发展对象分配入党志愿书编号（不可重复），点击"确定"按钮完成入党志愿书编号分配。
 
-![](./images/media/image163.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image163.png)
 
 ##### 下发入党志愿书
 
 点击"下发入党志愿书"，发展对象接收到入党志愿书填写通知。
 
-![](./images/media/image164.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image164.png)
 
 #### 发展对象（小程序端）
 
@@ -2116,7 +2116,7 @@ h3::before {
 
 点击"详情"查看入党志愿书编号以及入党志愿书填写模版，线下完成入党志愿书并提交至党支部。
 
-![eee6a8313640e6561d2963792ef7d131](./images/media/image165.jpeg){width="2.151388888888889in" height="4.527777777777778in"} ![ad30f0e68f29f2012cfa4c56f28f0a2e](./images/media/image166.jpeg){width="2.1493055555555554in" height="4.527777777777778in"}
+![eee6a8313640e6561d2963792ef7d131](./images/media/image165.jpeg) ![ad30f0e68f29f2012cfa4c56f28f0a2e](./images/media/image166.jpeg)
 
 #### 党支部管理员（PC端）
 
@@ -2124,9 +2124,9 @@ h3::before {
 
 点击"确认提交/确认志愿书提交"按钮，线上登记发展对象是否提交入党志愿书，无需上传。
 
-![](./images/media/image167.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image167.png)
 
-![](./images/media/image168.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image168.png)
 
 ### 支部大会讨论
 
@@ -2138,7 +2138,7 @@ h3::before {
 
 1.  点击"支部大会管理/支部大会"按钮进入支部大会管理，或者点击"组织生活"进入；
 
-![](./images/media/image169.png){width="6.759722222222222in" height="3.401388888888889in"}
+![](./images/media/image169.png)
 
 2.  点击"创建组织生活"按钮，进入【设置基本信息】页面。
 
@@ -2150,11 +2150,11 @@ h3::before {
 
 2.  "是否含投票表决"影响表决内容与表决人员名单，如选择"是"，则需选择表决内容、表决人员名单；如选择"否"，则无需填写表决内容、表决人员名单。
 
-![](./images/media/image170.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image170.png)
 
 3.  点击表决人员名单的"导入人员"按钮，选择表决人员，点击"确定"按钮；
 
-![](./images/media/image171.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image171.png)
 
 4.  点击"生成表决票"可导出表决票模版，确定基本信息填写完毕后点击"保存并发布"按钮发布会议。
 
@@ -2162,7 +2162,7 @@ h3::before {
 
 会议开始后，自动生成签到码和签退码，点击对应按钮即可查看二维码。
 
-![](./images/media/image172.png){width="6.759722222222222in" height="3.401388888888889in"}
+![](./images/media/image172.png)
 
 ##### 会议结束
 
@@ -2170,7 +2170,7 @@ h3::before {
 
 2.  点击"确认参会名单"按钮，进入组织生活记录。
 
-![](./images/media/image173.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image173.png)
 
 ##### 组织生活记录
 
@@ -2180,7 +2180,7 @@ h3::before {
 
 若选择发展对象的表决结果为"不同意接收"，发展对象状态变为：支部大会-不通过。可点击"重新流转表决"按钮回退至支部大会前一步骤，可重新参加支部大会。
 
-![](./images/media/image174.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image174.png)
 
 #### 发展对象（小程序端）
 
@@ -2192,7 +2192,7 @@ h3::before {
 
 1.  未签到时，扫描签退二维码无效；
 
-![41120389266ce9fc18cde7f6b0d30d95](./images/media/image175.jpeg){width="2.1465277777777776in" height="4.527777777777778in"}
+![41120389266ce9fc18cde7f6b0d30d95](./images/media/image175.jpeg)
 
 ### 上级党委派人谈话
 
@@ -2202,27 +2202,27 @@ h3::before {
 
 1.  点击"指派谈话人"进入【批量操作-流转-上级党委派人谈话管理】页面；
 
-![](./images/media/image176.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image176.png)
 
 2.  为预备党员指派谈话人，点击"确定"按钮完成指派。
 
-![](./images/media/image177.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image177.png)
 
 ##### 流转党委派人谈话
 
 点击"流转党委派人谈话"，发送党委谈话待办事项至预备党员。
 
-![](./images/media/image178.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image178.png)
 
 ##### 确认谈话
 
 1.  点击"确认谈话"进入【批量操作-流转-党委确认谈话】页面；
 
-![](./images/media/image179.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image179.png)
 
 2.  查看预备党员提交的谈话时间，也可对预备党员提交的谈话时间进行修改，确认无误后点击"确定"按钮完成上级党委派人谈话操作，流转下一环节。
 
-![](./images/media/image180.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image180.png)
 
 #### 预备党员（小程序端）
 
@@ -2232,7 +2232,7 @@ h3::before {
 
 2.  点击查看党员谈话意见参考，选择谈话时间，点击"提交"按钮提交至党委。
 
-    ![6e658c0bfab153dcbcb2a87f0d245794](./images/media/image181.jpeg){width="2.142361111111111in" height="4.527777777777778in"} ![84484136c2ee1e5183f93a4e0a2f52f7](./images/media/image182.jpeg){width="2.140972222222222in" height="4.527777777777778in"}
+    ![6e658c0bfab153dcbcb2a87f0d245794](./images/media/image181.jpeg) ![84484136c2ee1e5183f93a4e0a2f52f7](./images/media/image182.jpeg)
 
 ### 上级党委审批
 
@@ -2242,7 +2242,7 @@ h3::before {
 
 1.  点击"审批管理"按钮，进入【上级党委审批】页面；
 
-    ![](./images/media/image183.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image183.png)
 
 2.  点击"新增审批"按钮新增一条审批记录；
 
@@ -2252,13 +2252,13 @@ h3::before {
 
 4.  勾选预备党员名单，点击"确认并生成审批表"；
 
-    ![](./images/media/image184.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image184.png)
 
 ##### 提交审批表
 
 5.  点击"提交审批"，将审批表提交至学院党委审批；
 
-![](./images/media/image185.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image185.png)
 
 #### 学院党委管理员（PC端）
 
@@ -2268,7 +2268,7 @@ h3::before {
 
 1.  点击"审批管理"按钮，进入【上级党委审批】页面；
 
-![](./images/media/image186.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image186.png)
 
 1.  选择状态为"审批中"的审批记录，点击"详情"按钮进入审批完成页面；
 
@@ -2276,7 +2276,7 @@ h3::before {
 
 3.  点击"确认审批结果"按钮完成上级党委审批，预备党员进入下一环节。
 
-![](./images/media/image187.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image187.png)
 
 ### 再上一级党委组织部门备案
 
@@ -2284,7 +2284,7 @@ h3::before {
 
 1.  点击"再上一级党委备案/备案管理"按钮进入【党委备案】页面
 
-![](./images/media/image188.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image188.png)
 
 2.  点击"新增备案"按钮，新增一条再上一级党委组织部门备案记录；
 
@@ -2292,15 +2292,15 @@ h3::before {
 
 4.  选择备案填表时间，勾选预备党员名单，点击"确认并生产备案表"按钮，进入待提交备案状态；
 
-    ![](./images/media/image189.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image189.png)
 
 5.  生成备案表后，点击"提交备案"按钮，进入备案中状态；
 
-    ![](./images/media/image190.png){width="6.759722222222222in" height="3.401388888888889in"}
+    ![](./images/media/image190.png)
 
 6.  选择备案时间、填写备案说明（选填）后，点击"确认备案结果"按钮完成备案操作，进入下一阶段。
 
-    ![](./images/media/image191.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image191.png)
 
 ## 预备党员的教育考察和转正
 
@@ -2312,11 +2312,11 @@ h3::before {
 
 1.  点击"编入党小组"按钮，进入【批量操作-流转-编入党小组】页面；
 
-![](./images/media/image192.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image192.png)
 
 2.  为预备党员选择党小组（党小组由学院党委添加），点击"确定"按钮完成党小组编入；
 
-![](./images/media/image193.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image193.png)
 
 ### 入党宣誓
 
@@ -2326,23 +2326,23 @@ h3::before {
 
 1.  点击"流转入党宣誓"按钮，完成入党宣誓流转；
 
-![](./images/media/image194.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image194.png)
 
 ##### 填写宣誓时间
 
 2.  点击"填写宣誓时间"按钮进入【批量操作-流转-入党宣誓时间】页面；
 
-![](./images/media/image195.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image195.png)
 
 3.  填入入党宣誓时间，完成填写后点击"确定"按钮完整入党宣誓，流转下一环节。
 
-![](./images/media/image196.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image196.png)
 
 ### 转正教育考察
 
 转正教育考察操作同【第二节 入党积极分子的确定和培养教育阶段-[[培育考察]{.underline}](#培育考察)】一致，参考流程图如下：
 
-![转正教育培养考察2](./images/media/image197.png){width="2.689583333333333in" height="4.527777777777778in"}
+![转正教育培养考察2](./images/media/image197.png)
 
 #### 预备党员（小程序端）
 
@@ -2464,17 +2464,17 @@ h3::before {
 
 点击"开放转正申请"按钮，开放预备党员转正申请入口。
 
-![](./images/media/image198.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image198.png)
 
 ##### 处理转正申请
 
 1.  点击"处理转正申请"按钮，进入【批量操作-流转-转正申请确认】页面；
 
-![](./images/media/image199.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image199.png)
 
 2.  查看转正申请书，填写时间，确认申请书提交结果后，点击"确定"按钮完成转正申请，进入下一环节。
 
-![](./images/media/image200.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image200.png)
 
 #### 预备党员（小程序端）
 
@@ -2492,7 +2492,7 @@ h3::before {
 
 2.  审核结果不通过的，可按退回原因修改后重新提交。
 
-    ![7ea5ea8e01f23f9f1cae184ef4eb41b1](./images/media/image201.jpeg){width="2.14375in" height="4.527777777777778in"} ![0b01239c7e7029803bf4477ba8cea0cf](./images/media/image202.jpeg){width="2.142361111111111in" height="4.527777777777778in"}
+    ![7ea5ea8e01f23f9f1cae184ef4eb41b1](./images/media/image201.jpeg) ![0b01239c7e7029803bf4477ba8cea0cf](./images/media/image202.jpeg)
 
 ### 座谈会管理
 
@@ -2500,7 +2500,7 @@ h3::before {
 
 点击"流转座谈会"按钮，流转座谈会，进入座谈会管理；
 
-![](./images/media/image203.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image203.png)
 
 安排并完成座谈会操作同【第三节 第三节入党重点发展对象的确定和培养教育阶段-入党重点发展对象座谈会-党支部管理员（PC端）】一致，这里不再附图说明。
 
@@ -2526,19 +2526,19 @@ h3::before {
 
 1.  点击"进入公示/公示管理"按钮进入公示管理页面
 
-![](./images/media/image204.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image204.png)
 
 2.  点击"新增公示"按钮，新增一条预备党员转正公示，按照公示流程完成公示。
 
     公示流程同【第六章 党员发展管理-第一节 入党申请阶段-[[申请人公示]{.underline}](#申请人公示)】，公示流程参考如下图：
 
-    ![公示管理2](./images/media/image84.png){width="2.942361111111111in" height="4.527777777777778in"}
+    ![公示管理2](./images/media/image84.png)
 
 ### 上级党委预审
 
 上级党委预审操作同【第四节 预备党员的接收阶段-[[上级党委预审]{.underline}](#上级党委预审)】一致，流程图参考如下：
 
-![上级党委预审2](./images/media/image205.png){width="2.613888888888889in" height="4.527777777777778in"}
+![上级党委预审2](./images/media/image205.png)
 
 #### 党支部管理员（PC端）
 
@@ -2546,7 +2546,7 @@ h3::before {
 
 1.  点击"进入转正预审/预审管理"按钮，进入【上级党委预审】页面；
 
-    ![](./images/media/image206.png){width="6.759722222222222in" height="3.379861111111111in"}
+    ![](./images/media/image206.png)
 
 2.  点击"新增预审"按钮，新增一条预审记录；
 
@@ -2568,7 +2568,7 @@ h3::before {
 
 1.  点击"预审管理"按钮，进入【上级党委预审】页面；
 
-    ![](./images/media/image207.png){width="6.759722222222222in" height="3.3979166666666667in"}
+    ![](./images/media/image207.png)
 
 2.  选择状态为"审批中"的预审记录，点击"详情"按钮进入审批完成页面；
 
@@ -2588,7 +2588,7 @@ h3::before {
 
 1.  点击"进入支部大会/支部大会"按钮进入支部大会管理，或者点击"组织生活"进入；
 
-![](./images/media/image208.png){width="6.759722222222222in" height="3.39375in"}
+![](./images/media/image208.png)
 
 2.  点击"创建组织生活"按钮，进入【设置基本信息】页面。
 
@@ -2640,7 +2640,7 @@ h3::before {
 
 上级党委审批操作同【第四节 预备党员的接收阶段-[[上级党委审批]{.underline}](#上级党委审批)】一致，流程图参考如下：。
 
-![上级党委审批2](./images/media/image209.png){width="1.8333333333333333in" height="4.527777777777778in"}
+![上级党委审批2](./images/media/image209.png)
 
 #### 党支部管理员（PC端）
 
@@ -2648,7 +2648,7 @@ h3::before {
 
 1.  点击"审批管理"按钮，进入【上级党委审批】页面；
 
-    ![](./images/media/image210.png){width="6.759722222222222in" height="3.39375in"}
+    ![](./images/media/image210.png)
 
 2.  点击"新增审批"按钮新增一条审批记录；
 
@@ -2670,7 +2670,7 @@ h3::before {
 
 1.  点击"审批管理"按钮，进入【上级党委审批】页面；
 
-![](./images/media/image211.png){width="6.759722222222222in" height="3.401388888888889in"}
+![](./images/media/image211.png)
 
 2.  选择状态为"审批中"的审批记录，点击"详情"按钮进入审批完成页面；
 
@@ -2684,7 +2684,7 @@ h3::before {
 
 检查党员所有资料是否完备，时间节点是否正确后，点击"完成发展流程"按钮完成党员发展全流程。
 
-![](./images/media/image212.png){width="6.759722222222222in" height="3.3868055555555556in"}
+![](./images/media/image212.png)
 
 # 党员发展管理其他操作
 
@@ -2694,15 +2694,15 @@ h3::before {
 
 处于每一个阶段的申请人，均可点击其操作列表的"详情"按钮进入时间轴，可查看各阶段的发展流程。
 
-![](./images/media/image213.png){width="6.759722222222222in" height="3.3979166666666667in"}
+![](./images/media/image213.png)
 
-![](./images/media/image214.png){width="6.759722222222222in" height="3.390277777777778in"}
+![](./images/media/image214.png)
 
 ### 小程序端
 
 处于每一个阶段的申请人，均可点击首页"入党管理"按钮进入时间轴，可查看各阶段的发展流程。
 
-![8d5c854f8f7e3fa782405f19f4f973b6](./images/media/image215.jpeg){width="2.151388888888889in" height="4.527777777777778in"} ![3a6327e1feeb8027e36663a940212072](./images/media/image216.jpeg){width="2.1493055555555554in" height="4.527777777777778in"}
+![8d5c854f8f7e3fa782405f19f4f973b6](./images/media/image215.jpeg) ![3a6327e1feeb8027e36663a940212072](./images/media/image216.jpeg)
 
 ## 消息
 
@@ -2714,4 +2714,4 @@ h3::before {
 
 小程序接收到的消息，归入消息列表，点击即可查看。
 
-![dc28d466fa2f93c4bd4cba9f5999e9a2](./images/media/image217.jpeg){width="2.1486111111111112in" height="4.527777777777778in"}
+![dc28d466fa2f93c4bd4cba9f5999e9a2](./images/media/image217.jpeg)
