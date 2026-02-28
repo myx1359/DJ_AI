@@ -72,7 +72,6 @@
 
 2.  若多次尝试仍无法登录或忘记密码，请联系管理员进行处理。
 
-<style>body {counter-reset: section 0;}</style>
 
 # 用户管理
 
@@ -2336,6 +2335,7 @@
 小程序接收到的消息，归入消息列表，点击即可查看。
 
 ![dc28d466fa2f93c4bd4cba9f5999e9a2](./images/media/image217.jpeg)
+
 
 
 
