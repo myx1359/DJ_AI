@@ -40,55 +40,92 @@
 .toc-nav { display: none !important; }
 
 /* 统一正文和侧边栏的序号计数器规则 */
-body, .sidebar-nav {
+body {
   counter-reset: chapter 0 section 0 sub-section 0;
+}
+.sidebar-nav {
+  counter-reset: chapter 0 section 0 sub-section 0;
+  list-style: none !important;
+  padding-left: 0 !important;
 }
 
 /* 一级标题（h1）：序号不带点 */
-h1, .sidebar-nav > li > a {
+h1 {
   counter-reset: section 0 sub-section 0;
   counter-increment: chapter;
 }
-h1::before, .sidebar-nav > li > a::before {
+h1::before {
   content: counter(chapter) " ";
   font-weight: bold;
   margin-right: 0.2em;
 }
+.sidebar-nav > li {
+  counter-reset: section 0 sub-section 0;
+  counter-increment: chapter;
+}
+.sidebar-nav > li > a::before {
+  content: counter(chapter) " ";
+  font-weight: bold;
+  margin-right: 0.2em;
+  color: #42b983;
+  position: absolute;
+  left: 0.5em;
+  top: 0;
+}
 
 /* 二级标题（h2） */
-h2, .sidebar-nav > li > ul > li > a {
+h2 {
   counter-reset: sub-section 0;
   counter-increment: section;
 }
-h2::before, .sidebar-nav > li > ul > li > a::before {
+h2::before {
   content: counter(chapter) "." counter(section) " ";
   font-weight: bold;
   margin-right: 0.2em;
 }
+.sidebar-nav > li > ul > li {
+  counter-reset: sub-section 0;
+  counter-increment: section;
+}
+.sidebar-nav > li > ul > li > a::before {
+  content: counter(chapter) "." counter(section) " ";
+  font-weight: bold;
+  margin-right: 0.2em;
+  color: #42b983;
+  position: absolute;
+  left: 2em;
+  top: 0;
+}
 
 /* 三级标题（h3） */
-h3, .sidebar-nav > li > ul > li > ul > li > a {
+h3 {
   counter-increment: sub-section;
 }
-h3::before, .sidebar-nav > li > ul > li > ul > li > a::before {
+h3::before {
   content: counter(chapter) "." counter(section) "." counter(sub-section) " ";
   font-weight: bold;
   margin-right: 0.2em;
+}
+.sidebar-nav > li > ul > li > ul > li {
+  counter-increment: sub-section;
+}
+.sidebar-nav > li > ul > li > ul > li > a::before {
+  content: counter(chapter) "." counter(section) "." counter(sub-section) " ";
+  font-weight: bold;
+  margin-right: 0.2em;
+  color: #42b983;
+  position: absolute;
+  left: 3.5em;
+  top: 0;
 }
 
 /* 侧边栏序号美化 */
 .sidebar-nav a {
   position: relative;
   display: block;
-  padding-left: 2.5em;
+  padding-left: 2.5em !important;
   color: #333;
   text-decoration: none;
-}
-.sidebar-nav a::before {
-  position: absolute;
-  left: 0.5em;
-  top: 0;
-  color: #42b983;
 }
 .sidebar-nav ul {
   list-style: none;
