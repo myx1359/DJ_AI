@@ -60,6 +60,7 @@
     h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}
     h2 {counter-reset: sub-section 0;counter-increment: section;}
     h2::before {content: counter(chapter) "." counter(section) " ";font-weight: bold;margin-right: 0.2em;}
+    h3 {counter-increment: sub-section;}
     h3::before {content: counter(chapter) "." counter(section) "." counter(sub-section) " ";font-weight: bold;margin-right: 0.2em;}
   </style>
 </head>
@@ -108,15 +109,16 @@
       ]
     };
 
-    // 辅助函数：计算目录项层级
+    // 辅助函数：计算目录项层级（修正版）
     function getNodeDepth(node) {
-      let depth = 1;
-      let parent = node.parentElement;
-      while (parent && parent.classList.contains('sidebar-nav')) {
-        if (parent.tagName === 'UL') {
+      let depth = 0;
+      let current = node;
+      // 向上遍历所有父级 <ul> 元素，每遇到一个深度+1
+      while (current) {
+        if (current.tagName === 'UL' && current.classList.contains('sidebar-nav')) {
           depth++;
         }
-        parent = parent.parentElement;
+        current = current.parentElement;
       }
       return depth;
     }
