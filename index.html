@@ -6,52 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* ========== 核心：给侧边栏目录加层级序号 ========== */
-    /* 一级目录（h1）序号 */
-    .sidebar-nav > li::before {
-      content: counter(level1) " ";
+    /* ========== 核心修复：Docsify 侧边栏序号（关键调整） ========== */
+    /* 初始化一级序号计数器 */
+    .sidebar-nav {
+      counter-reset: level1 0; /* 从0开始，避免序号错位 */
+      list-style: none !important;
+      padding-left: 10px !important;
+    }
+    /* 一级目录（h1）- 修复计数器生效逻辑 */
+    .sidebar-nav > li {
+      counter-reset: level2 0;
+      position: relative;
+      padding-left: 25px !important; /* 加宽序号空间 */
+      list-style: none !important;
+      margin: 8px 0 !important;
+    }
+    .sidebar-nav > li > a::before {
+      content: counter(level1) ". ";
       counter-increment: level1;
       font-weight: bold;
+      position: absolute;
+      left: 5px; /* 序号位置左移，避免遮挡文字 */
+      top: 0;
     }
-    /* 重置二级目录序号 */
-    .sidebar-nav > li {
-      counter-reset: level2;
-      position: relative;
-      padding-left: 20px; /* 给序号留空间 */
+    /* 二级目录（h2） */
+    .sidebar-nav > li > ul > li {
+      counter-reset: level3 0;
+      padding-left: 40px !important;
+      list-style: none !important;
+      margin: 6px 0 !important;
     }
-    /* 二级目录（h2）序号 */
-    .sidebar-nav > li > ul > li::before {
+    .sidebar-nav > li > ul > li > a::before {
       content: counter(level1) "." counter(level2) " ";
       counter-increment: level2;
-      font-weight: normal;
+      font-weight: bold;
+      position: absolute;
+      left: 20px;
+      top: 0;
     }
-    /* 重置三级目录序号 */
-    .sidebar-nav > li > ul > li {
-      counter-reset: level3;
-      padding-left: 30px;
+    /* 三级目录（h3） */
+    .sidebar-nav > li > ul > li > ul > li {
+      padding-left: 55px !important;
+      list-style: none !important;
+      margin: 4px 0 !important;
     }
-    /* 三级目录（h3）序号 */
-    .sidebar-nav > li > ul > li > ul > li::before {
+    .sidebar-nav > li > ul > li > ul > li > a::before {
       content: counter(level1) "." counter(level2) "." counter(level3) " ";
       counter-increment: level3;
       font-size: 0.9em;
+      font-weight: bold;
+      position: absolute;
+      left: 35px;
+      top: 0;
     }
-    /* 初始化一级序号计数器 */
-    .sidebar-nav {
-      counter-reset: level1;
-      list-style: none !important; /* 隐藏默认圆点 */
-      padding-left: 10px !important;
-    }
-    /* 隐藏默认的目录圆点 */
-    .sidebar-nav li {
-      list-style: none !important;
-      margin: 4px 0;
-    }
-    /* ========== 侧边栏基础样式 ========== */
+
+    /* ========== 侧边栏基础样式（保留+优化） ========== */
     .app-nav { display: none !important; }
     .sidebar {
       display: block !important;
-      width: 280px !important; /* 加宽适配序号 */
+      width: 280px !important;
       left: 0 !important;
       top: 0 !important;
       background: #f5f5f5;
@@ -60,7 +73,7 @@
       overflow-y: auto;
       padding-top: 10px !important;
     }
-    /* 侧边栏顶部标题（可选，如需显示则保留） */
+    /* 侧边栏顶部标题 */
     .sidebar::before {
       content: "DJ_AI操作手册";
       display: block;
@@ -71,7 +84,7 @@
       background: #42b983;
       color: white;
       border-bottom: 1px solid #eee;
-      margin: -10px -10px 10px -10px; /* 适配内边距 */
+      margin: -10px -10px 10px -10px;
     }
     /* 正文区偏移 */
     .content {
@@ -80,26 +93,38 @@
     }
     .toc-nav { display: none !important; }
 
-    /* 正文序号样式（保留原有） */
+    /* ========== 正文序号样式（保留原有） ========== */
     body {counter-reset: chapter 0 section 0;}
     h1 {counter-reset: section 0;counter-increment: chapter;}
     h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}
     h2 {counter-reset: sub-section 0;counter-increment: section;}
     h2::before {content: counter(chapter) "." counter(section) " ";font-weight: bold;margin-right: 0.2em;}
+    h3 {counter-increment: sub-section;} /* 修复三级标题计数器 */
     h3::before {content: counter(chapter) "." counter(section) "." counter(sub-section) " ";font-weight: bold;margin-right: 0.2em;}
+
+    /* 修复Docsify默认样式冲突 */
+    .sidebar-nav a {
+      position: relative !important; /* 让序号定位生效 */
+      display: inline-block !important;
+      width: 100% !important;
+    }
+    .sidebar-nav ul {
+      padding-left: 0 !important; /* 重置默认内边距 */
+    }
   </style>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '', // 清空避免干扰
+      name: '',
       repo: 'https://github.com/myx1359/DJ_AI',
-      autoHeader: false, // 关闭自动标题
-      subMaxLevel: 3, // 抓取1-3级标题
+      autoHeader: false,
+      subMaxLevel: 3, // 抓取1-3级标题生成侧边栏
       auto2top: true,
-      loadSidebar: false, // 自动抓取README标题
-      // 关键：确保锚点和目录匹配
+      loadSidebar: false, // 自动从README.md抓取标题
+      homepage: 'README.md', // 明确指定加载README.md（关键！）
+      // 锚点配置（确保跳转正常）
       markdown: {
         anchor: {
           level: [1,2,3],
