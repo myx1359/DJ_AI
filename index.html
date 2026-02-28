@@ -6,135 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-/* 侧边栏基础样式 */
-.app-nav { display: none !important; }
-.sidebar {
-  display: block !important;
-  width: 280px !important;
-  left: 0 !important;
-  top: 0 !important;
-  background: #f5f5f5;
-  border-right: 1px solid #eee;
-  height: 100vh !important;
-  overflow-y: auto;
-  padding: 10px !important;
-}
-/* 侧边栏顶部标题 */
-.sidebar::before {
-  content: "中山大学计算机学院党建AI管理系统操作手册";
-  display: block;
-  padding: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  background: #42b983;
-  color: white;
-  border-bottom: 1px solid #eee;
-  margin: -10px -10px 10px -10px;
-}
-/* 正文区偏移 */
-.content {
-  margin-left: 280px !important;
-  padding: 20px;
-}
-.toc-nav { display: none !important; }
+    /* 侧边栏基础样式 */
+    .app-nav { display: none !important; }
+    .sidebar {
+      display: block !important;
+      width: 280px !important;
+      left: 0 !important;
+      top: 0 !important;
+      background: #f5f5f5;
+      border-right: 1px solid #eee;
+      height: 100vh !important;
+      overflow-y: auto;
+      padding: 10px !important;
+    }
+    /* 侧边栏顶部标题 */
+    .sidebar::before {
+      content: "中山大学计算机学院党建AI管理系统操作手册";
+      display: block;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      background: #42b983;
+      color: white;
+      border-bottom: 1px solid #eee;
+      margin: -10px -10px 10px -10px;
+    }
+    /* 正文区偏移 */
+    .content {
+      margin-left: 280px !important;
+      padding: 20px;
+    }
+    .toc-nav { display: none !important; }
 
-/* 统一正文和侧边栏的序号计数器规则 */
-body {
-  counter-reset: chapter 0 section 0 sub-section 0;
-}
-.sidebar-nav {
-  counter-reset: chapter 0 section 0 sub-section 0;
-  list-style: none !important;
-  padding-left: 0 !important;
-}
-
-/* 一级标题（h1）：序号不带点 */
-h1 {
-  counter-reset: section 0 sub-section 0;
-  counter-increment: chapter;
-}
-h1::before {
-  content: counter(chapter) " ";
-  font-weight: bold;
-  margin-right: 0.2em;
-}
-.sidebar-nav > li {
-  counter-reset: section 0 sub-section 0;
-  counter-increment: chapter;
-}
-.sidebar-nav > li > a::before {
-  content: counter(chapter) " ";
-  font-weight: bold;
-  margin-right: 0.2em;
-  color: #42b983;
-  position: absolute;
-  left: 0.5em;
-  top: 0;
-}
-
-/* 二级标题（h2） */
-h2 {
-  counter-reset: sub-section 0;
-  counter-increment: section;
-}
-h2::before {
-  content: counter(chapter) "." counter(section) " ";
-  font-weight: bold;
-  margin-right: 0.2em;
-}
-.sidebar-nav > li > ul > li {
-  counter-reset: sub-section 0;
-  counter-increment: section;
-}
-.sidebar-nav > li > ul > li > a::before {
-  content: counter(chapter) "." counter(section) " ";
-  font-weight: bold;
-  margin-right: 0.2em;
-  color: #42b983;
-  position: absolute;
-  left: 2em;
-  top: 0;
-}
-
-/* 三级标题（h3） */
-h3 {
-  counter-increment: sub-section;
-}
-h3::before {
-  content: counter(chapter) "." counter(section) "." counter(sub-section) " ";
-  font-weight: bold;
-  margin-right: 0.2em;
-}
-.sidebar-nav > li > ul > li > ul > li {
-  counter-increment: sub-section;
-}
-.sidebar-nav > li > ul > li > ul > li > a::before {
-  content: counter(chapter) "." counter(section) "." counter(sub-section) " ";
-  font-weight: bold;
-  margin-right: 0.2em;
-  color: #42b983;
-  position: absolute;
-  left: 3.5em;
-  top: 0;
-}
-
-/* 侧边栏序号美化 */
-.sidebar-nav a {
-  position: relative;
-  display: block;
-  padding-left: 2.5em !important;
-  color: #333;
-  text-decoration: none;
-}
-.sidebar-nav ul {
-  list-style: none;
-  padding-left: 0;
-}
-.sidebar-nav li {
-  list-style: none;
-  margin: 4px 0;
-}
+    /* 序号样式统一（正文+侧边栏） */
+    .custom-number {
+      font-weight: bold;
+      color: #42b983;
+      margin-right: 5px;
+    }
+    /* 侧边栏链接样式（避免缩进问题） */
+    .sidebar-nav a {
+      position: relative;
+      display: block;
+      padding-left: 10px !important;
+      color: #333;
+      text-decoration: none;
+      margin: 4px 0;
+    }
+    .sidebar-nav ul {
+      list-style: none !important;
+      padding-left: 20px !important;
+    }
+    .sidebar-nav li {
+      list-style: none !important;
+    }
   </style>
 </head>
 <body>
@@ -143,14 +69,95 @@ h3::before {
     window.$docsify = {
       name: '',
       repo: 'https://github.com/myx1359/DJ_AI',
-      subMaxLevel: 3, // 抓取1-3级标题
+      subMaxLevel: 3,
       auto2top: true,
       homepage: 'README.md',
-      // 核心：自定义侧边栏渲染，自动加序号
-      plugins: []
+      plugins: [
+        function(hook, vm) {
+          // 页面渲染完成后执行（核心逻辑）
+          hook.doneEach(function() {
+            // ========== 第一步：处理正文标题序号 ==========
+            const headings = {
+              h1: document.querySelectorAll('.content h1'),
+              h2: document.querySelectorAll('.content h2'),
+              h3: document.querySelectorAll('.content h3')
+            };
+            
+            // 初始化计数器
+            let h1Index = 0;
+            let h2Index = 0;
+            let h3Index = 0;
+
+            // 遍历一级标题（h1）
+            headings.h1.forEach((h1, index) => {
+              h1Index = index + 1; // 一级序号从1开始
+              h2Index = 0; // 重置二级计数器
+              
+              // 清除原有CSS生成的序号，手动添加
+              const h1Text = h1.textContent.replace(/^\d+\s/, '').trim();
+              h1.innerHTML = `<span class="custom-number">${h1Index}</span>${h1Text}`;
+
+              // 找到当前h1下的所有h2
+              const nextH1 = headings.h1[index + 1] || null;
+              const currentH2List = [];
+              
+              headings.h2.forEach(h2 => {
+                const isBetween = (!nextH1 && h2.compareDocumentPosition(h1) & 4) || 
+                                  (nextH1 && h2.compareDocumentPosition(h1) & 4 && !(h2.compareDocumentPosition(nextH1) & 4));
+                if (isBetween) currentH2List.push(h2);
+              });
+
+              // 遍历当前h1下的h2
+              currentH2List.forEach((h2) => {
+                h2Index++;
+                h3Index = 0; // 重置三级计数器
+                
+                // 清除原有序号，手动添加
+                const h2Text = h2.textContent.replace(/^\d+\.\d+\s/, '').trim();
+                h2.innerHTML = `<span class="custom-number">${h1Index}.${h2Index}</span>${h2Text}`;
+
+                // 找到当前h2下的所有h3
+                const nextH2 = currentH2List[currentH2List.indexOf(h2) + 1] || nextH1;
+                const currentH3List = [];
+                
+                headings.h3.forEach(h3 => {
+                  const isBetween = (!nextH2 && h3.compareDocumentPosition(h2) & 4) || 
+                                    (nextH2 && h3.compareDocumentPosition(h2) & 4 && !(h3.compareDocumentPosition(nextH2) & 4));
+                  if (isBetween) currentH3List.push(h3);
+                });
+
+                // 遍历当前h2下的h3
+                currentH3List.forEach((h3) => {
+                  h3Index++;
+                  const h3Text = h3.textContent.replace(/^\d+\.\d+\.\d+\s/, '').trim();
+                  h3.innerHTML = `<span class="custom-number">${h1Index}.${h2Index}.${h3Index}</span>${h3Text}`;
+                });
+              });
+            });
+
+            // ========== 第二步：同步侧边栏序号 ==========
+            // 建立「标题文字-序号」映射表
+            const titleNumberMap = new Map();
+            document.querySelectorAll('.content .custom-number').forEach(span => {
+              const number = span.textContent.trim();
+              const title = span.nextSibling.textContent.trim();
+              titleNumberMap.set(title, number);
+            });
+
+            // 给侧边栏标题添加对应序号
+            document.querySelectorAll('.sidebar-nav a').forEach(link => {
+              const linkText = link.textContent.trim();
+              const number = titleNumberMap.get(linkText);
+              if (number) {
+                // 清除原有序号，添加新序号
+                link.innerHTML = `<span class="custom-number">${number}</span>${linkText}`;
+              }
+            });
+          });
+        }
+      ]
     };
   </script>
-  <!-- Docsify 核心脚本 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 </body>
 </html>
