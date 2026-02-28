@@ -32,20 +32,11 @@
       border-bottom: 1px solid #eee;
       margin: -10px -10px 10px -10px;
     }
-    /* 侧边栏序号样式（插件生成后美化） */
-    .sidebar-nav .toc-item {
-      position: relative;
-      padding-left: 25px !important;
-      margin: 6px 0 !important;
-      list-style: none !important;
-    }
     /* 序号样式统一 */
-    .sidebar-nav .toc-number {
-      position: absolute;
-      left: 5px;
-      top: 0;
+    .toc-number {
       font-weight: bold;
       color: #42b983; /* 序号颜色 */
+      margin-right: 5px; /* 序号和文字间距 */
     }
     /* 正文区偏移 */
     .content {
@@ -55,8 +46,8 @@
     .toc-nav { display: none !important; }
 
     /* 正文序号样式（保留原有） */
-    body {counter-reset: chapter 0 section 0;}
-    h1 {counter-reset: section 0;counter-increment: chapter;}
+    body {counter-reset: chapter 0 section 0 sub-section 0;}
+    h1 {counter-reset: section 0 sub-section 0;counter-increment: chapter;}
     h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}
     h2 {counter-reset: sub-section 0;counter-increment: section;}
     h2::before {content: counter(chapter) "." counter(section) " ";font-weight: bold;margin-right: 0.2em;}
@@ -78,60 +69,66 @@
         function(hook, vm) {
           // 侧边栏渲染完成后执行
           hook.doneEach(function() {
-            // 初始化计数器
-            let level1 = 0, level2 = 0, level3 = 0;
-            // 获取所有侧边栏标题项
-            const tocItems = document.querySelectorAll('.sidebar-nav li');
+            // 先清空所有旧序号，避免重复
+            document.querySelectorAll('.toc-number').forEach(el => el.remove());
             
-            tocItems.forEach(item => {
-              // 判断标题层级（通过class/深度判断）
-              const depth = getNodeDepth(item);
-              const link = item.querySelector('a');
-              if (!link) return;
+            // 按层级分组计数（核心：独立计数，兼容重复标题）
+            const levelCounters = {
+              1: 0,    // 一级标题计数器
+              2: {},   // 二级标题计数器（按一级序号分组）
+              3: {}    // 三级标题计数器（按一级+二级序号分组）
+            };
 
-              // 重置/递增计数器
+            // 遍历所有侧边栏链接（按DOM顺序，确保序号递增）
+            const links = document.querySelectorAll('.sidebar-nav a');
+            links.forEach(link => {
+              // 1. 获取当前链接的层级（关键：通过父级ul的嵌套深度判断）
+              let depth = 1;
+              let parent = link.parentElement;
+              while (parent && parent.tagName === 'LI') {
+                parent = parent.parentElement;
+                if (parent && parent.tagName === 'UL') {
+                  depth++;
+                }
+              }
+              depth = Math.min(depth, 3); // 最多三级
+
+              // 2. 计算对应层级的序号
+              let number = '';
               if (depth === 1) {
-                level1++;
-                level2 = 0;
-                level3 = 0;
-                addNumber(link, `${level1}`);
+                levelCounters[1]++;
+                const l1 = levelCounters[1];
+                number = l1;
+                // 重置当前一级下的二级计数器
+                levelCounters[2][l1] = 0;
               } else if (depth === 2) {
-                level2++;
-                level3 = 0;
-                addNumber(link, `${level1}.${level2}`);
+                const l1 = levelCounters[1]; // 最近的一级序号
+                levelCounters[2][l1] = (levelCounters[2][l1] || 0) + 1;
+                const l2 = levelCounters[2][l1];
+                number = `${l1}.${l2}`;
+                // 重置当前二级下的三级计数器
+                levelCounters[3][`${l1}.${l2}`] = 0;
               } else if (depth === 3) {
-                level3++;
-                addNumber(link, `${level1}.${level2}.${level3}`);
+                const l1 = levelCounters[1]; // 最近的一级序号
+                const l2 = levelCounters[2][l1]; // 最近的二级序号
+                const key = `${l1}.${l2}`;
+                levelCounters[3][key] = (levelCounters[3][key] || 0) + 1;
+                const l3 = levelCounters[3][key];
+                number = `${l1}.${l2}.${l3}`;
+              }
+
+              // 3. 添加序号标签
+              if (number) {
+                const span = document.createElement('span');
+                span.className = 'toc-number';
+                span.textContent = number;
+                link.insertBefore(span, link.firstChild);
               }
             });
           });
         }
       ]
     };
-
-    // 辅助函数：计算目录项层级（修正版）
-    function getNodeDepth(node) {
-      let depth = 0;
-      let current = node;
-      // 向上遍历所有父级 <ul> 元素，每遇到一个深度+1
-      while (current) {
-        if (current.tagName === 'UL' && current.classList.contains('sidebar-nav')) {
-          depth++;
-        }
-        current = current.parentElement;
-      }
-      return depth;
-    }
-
-    // 辅助函数：给标题添加序号
-    function addNumber(link, number) {
-      // 避免重复添加序号
-      if (link.querySelector('.toc-number')) return;
-      const span = document.createElement('span');
-      span.className = 'toc-number';
-      span.textContent = number + ' ';
-      link.insertBefore(span, link.firstChild);
-    }
   </script>
   <!-- Docsify 核心脚本 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
