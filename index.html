@@ -45,14 +45,14 @@
     }
     .toc-nav { display: none !important; }
 
-    /* 正文序号样式（保留原有） */
+    /* 正文序号样式（修正版） */
     body {counter-reset: chapter 0 section 0 sub-section 0;}
-    h1 {counter-reset: section 0 sub-section 0;counter-increment: chapter;}
-    h1::before {content: counter(chapter) ". ";font-weight: bold;margin-right: 0.2em;}
-    h2 {counter-reset: sub-section 0;counter-increment: section;}
-    h2::before {content: counter(chapter) "." counter(section) " ";font-weight: bold;margin-right: 0.2em;}
+    h1 {counter-reset: section 0 sub-section 0; counter-increment: chapter;}
+    h1::before {content: counter(chapter) " "; /* 去掉点号 */ font-weight: bold; margin-right: 0.2em;}
+    h2 {counter-reset: sub-section 0; counter-increment: section;}
+    h2::before {content: counter(chapter) "." counter(section) " "; font-weight: bold; margin-right: 0.2em;}
     h3 {counter-increment: sub-section;}
-    h3::before {content: counter(chapter) "." counter(section) "." counter(sub-section) " ";font-weight: bold;margin-right: 0.2em;}
+    h3::before {content: counter(chapter) "." counter(section) "." counter(sub-section) " "; font-weight: bold; margin-right: 0.2em;}
   </style>
 </head>
 <body>
@@ -67,57 +67,24 @@
       // 核心：自定义侧边栏渲染，自动加序号
       plugins: [
         function(hook, vm) {
-          // 侧边栏渲染完成后执行
           hook.doneEach(function() {
-            // 先清空所有旧序号，避免重复
+            // 1. 先清空所有旧序号
             document.querySelectorAll('.toc-number').forEach(el => el.remove());
-            
-            // 按层级分组计数（核心：独立计数，兼容重复标题）
-            const levelCounters = {
-              1: 0,    // 一级标题计数器
-              2: {},   // 二级标题计数器（按一级序号分组）
-              3: {}    // 三级标题计数器（按一级+二级序号分组）
-            };
 
-            // 遍历所有侧边栏链接（按DOM顺序，确保序号递增）
-            const links = document.querySelectorAll('.sidebar-nav a');
-            links.forEach(link => {
-              // 1. 获取当前链接的层级（关键：通过父级ul的嵌套深度判断）
-              let depth = 1;
-              let parent = link.parentElement;
-              while (parent && parent.tagName === 'LI') {
-                parent = parent.parentElement;
-                if (parent && parent.tagName === 'UL') {
-                  depth++;
-                }
-              }
-              depth = Math.min(depth, 3); // 最多三级
+            // 2. 获取所有正文标题及其序号
+            const headings = document.querySelectorAll('.content h1, .content h2, .content h3');
+            const headingMap = new Map();
+            headings.forEach(h => {
+              const text = h.textContent.trim().replace(/^[\d. ]+/, ''); // 提取纯标题文字
+              const number = h.textContent.trim().match(/^[\d. ]+/)[0].trim(); // 提取序号
+              headingMap.set(text, number);
+            });
 
-              // 2. 计算对应层级的序号
-              let number = '';
-              if (depth === 1) {
-                levelCounters[1]++;
-                const l1 = levelCounters[1];
-                number = l1;
-                // 重置当前一级下的二级计数器
-                levelCounters[2][l1] = 0;
-              } else if (depth === 2) {
-                const l1 = levelCounters[1]; // 最近的一级序号
-                levelCounters[2][l1] = (levelCounters[2][l1] || 0) + 1;
-                const l2 = levelCounters[2][l1];
-                number = `${l1}.${l2}`;
-                // 重置当前二级下的三级计数器
-                levelCounters[3][`${l1}.${l2}`] = 0;
-              } else if (depth === 3) {
-                const l1 = levelCounters[1]; // 最近的一级序号
-                const l2 = levelCounters[2][l1]; // 最近的二级序号
-                const key = `${l1}.${l2}`;
-                levelCounters[3][key] = (levelCounters[3][key] || 0) + 1;
-                const l3 = levelCounters[3][key];
-                number = `${l1}.${l2}.${l3}`;
-              }
-
-              // 3. 添加序号标签
+            // 3. 遍历侧边栏，为每个标题匹配序号
+            const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+            sidebarLinks.forEach(link => {
+              const text = link.textContent.trim();
+              const number = headingMap.get(text);
               if (number) {
                 const span = document.createElement('span');
                 span.className = 'toc-number';
