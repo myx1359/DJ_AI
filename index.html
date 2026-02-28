@@ -76,80 +76,58 @@
         function(hook, vm) {
           // 页面渲染完成后执行（核心逻辑）
           hook.doneEach(function() {
-            // ========== 第一步：处理正文标题序号 ==========
-            const headings = {
-              h1: document.querySelectorAll('.content h1'),
-              h2: document.querySelectorAll('.content h2'),
-              h3: document.querySelectorAll('.content h3')
-            };
-            
-            // 初始化计数器
-            let h1Index = 0;
-            let h2Index = 0;
-            let h3Index = 0;
+            // ========== 第一步：构建标题层级树 ==========
+            const headings = document.querySelectorAll('.content h1, .content h2, .content h3');
+            const titleTree = [];
+            let currentLevel1 = null;
+            let currentLevel2 = null;
 
-            // 遍历一级标题（h1）
-            headings.h1.forEach((h1, index) => {
-              h1Index = index + 1; // 一级序号从1开始
-              h2Index = 0; // 重置二级计数器
-              
-              // 清除原有CSS生成的序号，手动添加
-              const h1Text = h1.textContent.replace(/^\d+\s/, '').trim();
-              h1.innerHTML = `<span class="custom-number">${h1Index}</span>${h1Text}`;
+            headings.forEach(heading => {
+              const level = parseInt(heading.tagName[1]);
+              const text = heading.textContent.trim();
 
-              // 找到当前h1下的所有h2
-              const nextH1 = headings.h1[index + 1] || null;
-              const currentH2List = [];
-              
-              headings.h2.forEach(h2 => {
-                const isBetween = (!nextH1 && h2.compareDocumentPosition(h1) & 4) || 
-                                  (nextH1 && h2.compareDocumentPosition(h1) & 4 && !(h2.compareDocumentPosition(nextH1) & 4));
-                if (isBetween) currentH2List.push(h2);
-              });
-
-              // 遍历当前h1下的h2
-              currentH2List.forEach((h2) => {
-                h2Index++;
-                h3Index = 0; // 重置三级计数器
-                
-                // 清除原有序号，手动添加
-                const h2Text = h2.textContent.replace(/^\d+\.\d+\s/, '').trim();
-                h2.innerHTML = `<span class="custom-number">${h1Index}.${h2Index}</span>${h2Text}`;
-
-                // 找到当前h2下的所有h3
-                const nextH2 = currentH2List[currentH2List.indexOf(h2) + 1] || nextH1;
-                const currentH3List = [];
-                
-                headings.h3.forEach(h3 => {
-                  const isBetween = (!nextH2 && h3.compareDocumentPosition(h2) & 4) || 
-                                    (nextH2 && h3.compareDocumentPosition(h2) & 4 && !(h3.compareDocumentPosition(nextH2) & 4));
-                  if (isBetween) currentH3List.push(h3);
-                });
-
-                // 遍历当前h2下的h3
-                currentH3List.forEach((h3) => {
-                  h3Index++;
-                  const h3Text = h3.textContent.replace(/^\d+\.\d+\.\d+\s/, '').trim();
-                  h3.innerHTML = `<span class="custom-number">${h1Index}.${h2Index}.${h3Index}</span>${h3Text}`;
-                });
-              });
+              if (level === 1) {
+                currentLevel1 = { level: 1, text, children: [] };
+                titleTree.push(currentLevel1);
+              } else if (level === 2 && currentLevel1) {
+                currentLevel2 = { level: 2, text, children: [] };
+                currentLevel1.children.push(currentLevel2);
+              } else if (level === 3 && currentLevel2) {
+                currentLevel2.children.push({ level: 3, text });
+              }
             });
 
-            // ========== 第二步：同步侧边栏序号 ==========
-            // 建立「标题文字-序号」映射表
+            // ========== 第二步：为每个标题计算序号 ==========
             const titleNumberMap = new Map();
-            document.querySelectorAll('.content .custom-number').forEach(span => {
-              const number = span.textContent.trim();
-              const title = span.nextSibling.textContent.trim();
-              titleNumberMap.set(title, number);
+            titleTree.forEach((level1, index1) => {
+              const num1 = index1 + 1;
+              titleNumberMap.set(level1.text, `${num1}`);
+
+              level1.children.forEach((level2, index2) => {
+                const num2 = index2 + 1;
+                titleNumberMap.set(level2.text, `${num1}.${num2}`);
+
+                level2.children.forEach((level3, index3) => {
+                  const num3 = index3 + 1;
+                  titleNumberMap.set(level3.text, `${num1}.${num2}.${num3}`);
+                });
+              });
             });
 
-            // 给侧边栏标题添加对应序号
+            // ========== 第三步：给正文标题添加序号 ==========
+            document.querySelectorAll('.content h1, .content h2, .content h3').forEach(heading => {
+              const text = heading.textContent.trim();
+              const number = titleNumberMap.get(text);
+              if (number) {
+                heading.innerHTML = `<span class="custom-number">${number}</span>${text}`;
+              }
+            });
+
+            // ========== 第四步：同步侧边栏序号 ==========
             document.querySelectorAll('.sidebar-nav a').forEach(link => {
               const linkText = link.textContent.trim();
               const number = titleNumberMap.get(linkText);
               if (number) {
-                // 清除原有序号，添加新序号
                 link.innerHTML = `<span class="custom-number">${number}</span>${linkText}`;
               }
             });
